@@ -14,10 +14,10 @@ body {
   }
 }
 
-.business-header {
-  height: 50vh;
+.top-header {
+  height: 40vh;
   min-height: 300px;
-  background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+  background: url('images/Landslidebanner_twitter.png') center center no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
