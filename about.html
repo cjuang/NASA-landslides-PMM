@@ -33,9 +33,9 @@
 					Report Landslides
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-				<a class="dropdown-item" href="#">Get Started</a>
-				<a class="dropdown-item" href="#">Using the Landslide Reporter App</a>
-				<a class="dropdown-item" href="#">Make a Report Resources</a>
+				<a class="dropdown-item" href="getstarted.html">Get Started</a>
+				<a class="dropdown-item" href="reporterapp.html">Using the Landslide Reporter App</a>
+				<a class="dropdown-item" href="makereport.html">Make a Report</a>
 				</div>
 			</li>
 			<li class="nav-item dropdown">
@@ -43,8 +43,8 @@
 					Data
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Using the Landslide Viewer App</a>
-					<a class="dropdown-item" href="#">Downloading the Data</a>
+					<a class="dropdown-item" href="viewerapp.html">Using the Landslide Viewer App</a>
+					<a class="dropdown-item" href="downloaddata.html">Downloading the Data</a>
 				</div>
 			</li>
 			<li class="nav-item">
@@ -58,7 +58,20 @@
 		</ul>
 	</div>
   </div>
-</nav> 
+</nav>
+
+<!-- breadcrumbs -->
+<div class = "container">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">About</li>
+		</ol>
+	</nav>
+</div>
+
+
+</nav>
 
 <!-- Page Content -->
 <div class="container">
@@ -68,7 +81,7 @@
 			<h3>Why COOLR?</h3>
 			<p class = "LRbold">Landslides cause billions of dollars in infrastructural damage and thousands of deaths every year around the world.</p>
 			<p>However, to date we do not have a global picture of exactly where and when landslides occur owing to their small size and difficulty in identifying 
-			their onset and extent when no one is around to witness their impacts. The COOLR project seeks to cultivate an open platform where 
+			their onset and extent when no one is around to witness their impacts. The COOLR project provides an open platform where 
 			scientists and citizen scientists around the world can share landslide reports to guide awareness of landslide hazards for improving
 			scientific modeling and emergency response.
 			</p>
@@ -78,21 +91,23 @@
 			Landslide Catalog (GLC)</a> and landslide events contributed by citizen scientists. In a future release of COOLR, collated landslide inventories will be added by REST API or manually.
 			</p>
 			
-			<img src = "images/COOLR stage1 diagram.png" class = "img-fluid" alt = "structure of COOLR">
-			<p>The structure of the Cooperative Open Online Landslide Repository (COOLR). The dotted outline represents future additions.</p>
+			<figure class = "figure">
+				<img src = "images/COOLR stage1 diagram.png" class = "img-fluid" alt = "structure of COOLR">
+				<figcaption class="figure-caption">The structure of the Cooperative Open Online Landslide Repository (COOLR). The dotted outline represents future additions.</figcaption>
+			</figure>
 				
 			<h3>Why are citizen scientists needed?</h3>
 			<p>NASA's <a href = "resources.html#GLC">Global Landslide Catalog (GLC)</a>—a part of COOLR—provides new insight into landslide hazards around the world, but it has been a manual and very 
 			time consuming process that is hard to maintain. In fact, if we sum up all the hours it has taken over the past 10 years to compile this 
 			database it would total over 140 days or 84 work weeks. The database is also challenged by biases affecting where and when landslide 
-			information is available (for more details please see the <a href = "resources.html">Resources</a> section). Therefore, we are appealing to the global citizen 
+			information is available (for more details please read through the Publications in the <a href = "resources.html">Resources</a> section). Therefore, we are appealing to the global citizen 
 			science community to help advance our knowledge of where and when landslides are happening around the world by adding reports to the 
 			Cooperative Open Online Landslide Repository (COOLR). Citizen scientists are people like you who can use their knowledge to advance 
 			scientific research.</p>
 			<strong>Citizen science enables:</strong>
 			<ol>
 				<li>A collection with as many different sources and as little bias as possible, 
-				including first-hand accounts, reports in other languages, and points from other 
+				including local first-hand accounts, reports in other languages, and points from other 
 				databases
 				<li>More hands to contribute reports, leading to a more up-to-date and thorough
 				database
@@ -104,14 +119,74 @@
 			<h3>Next Steps: Get Started with COOLR</h3>
 				<p>Visit the <a href = "getstarted.html">Get Started</a> page to learn how you can access the data, learn more about landslides, and contribute to advancing landslide science and emergency response by adding your own reports.</p>
 				
-			<h3>Data Citation</h3>
-				<h4>GLC Data Citation</h4>
-				<p>The NASA’s Global Landslide Catalog data is described and can be referenced by the following publications:</p>
-				<ul>
-					<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog.<i> Geomorphology, 249</i>, 4-15. doi:<a href = "https://doi.org/10.1016/j.geomorph.2015.03.016">10.1016/j.geomorph.2015.03.016</a>
-					<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards, 52,</i> 561-575. <a href = "https://doi.org/10.1007/s11069-009-9401-4">doi:10.1007/s11069-009-9401-4</a>
-				</ul>
-		
+			<h3>Frequently Asked Questions</h3>
+			<h5>General</h5>
+			<a data-toggle="collapse" href="#collapseThis1" role="button" aria-expanded="false" aria-controls="collapseThis1">
+				+Is my information tied to my landslide reports and made publicly available on COOLR?
+			</a>
+			<div class="collapse" id="collapseThis1">
+				<div class="card card-body">
+					No, we do not store any personally identifiable information nor do we make that information public. We ask you to log into Google or Facebook so that the system can generate a unique user ID (a random string of letters and numbers) for you so you can see all of your submitted landslides in Landslide Reporter,
+					but we cannot use that user ID to identify you.	For more details about privacy, please refer to our <a href = "privacy.html">Privacy</a> statement.
+				</div>
+			</div><br>
+			<br>
+			<h5>Landslide Reporter</h5>
+			<a data-toggle="collapse" href="#collapseThis2" role="button" aria-expanded="false" aria-controls="collapseThis2">
+				+Can I edit/delete my report after I submitted it?
+			</a>
+			<div class="collapse" id="collapseThis2">
+				<div class="card card-body">
+					If the submission hasn’t been checked by our team yet, you may edit it under My Submissions. Click on the report you want to edit, and click the pencil icon or trash icon in the top right-hand corner to edit or delete the report.
+				</div>
+			</div><br>
+			<a data-toggle="collapse" href="#collapseThis3" role="button" aria-expanded="false" aria-controls="collapseThis3">
+				+Can I see all my past reports that were accepted to the catalog?
+			</a>
+			<div class="collapse" id="collapseThis3">
+				<div class="card card-body">
+					Unfortunately, you cannot see all your past reports in one place after they have been accepted and put in COOLR due to the way our privacy and validation processes work. You can navigate and find them in Landslide Viewer if you remember which ones you submitted,
+					but we do not show your account's system-generated user ID to the public for privacy purposes.
+				</div>
+			</div><br>
+			<a data-toggle="collapse" href="#collapseThis4" role="button" aria-expanded="false" aria-controls="collapseThis4">
+				+Are the submissions quality-checked before they are added to the catalog?
+			</a>
+			<div class="collapse" id="collapseThis4">
+				<div class="card card-body">
+					Yes, all reports submitted through Landslide Reporter are quality-checked for accuracy and detail by members of the team at NASA Goddard Space Flight Center.
+				</div>
+			</div><br>
+			<br>
+			<h5>Data Download and Analysis</h5>
+			<a data-toggle="collapse" href="#collapseThis5" role="button" aria-expanded="false" aria-controls="collapseThis5">
+				+Can I download COOLR for my research?
+			</a>
+			<div class="collapse" id="collapseThis5">
+				<div class="card card-body">
+					Yes! The Cooperative Open Online Landslide Inventory (COOLR) is publicly available to download from the <a href="https://landslides.nasa.gov/viewer" target="_blank">Landslide Viewer</a> page.
+					We ask that you provide a citation link to the website or, for published articles, cite the dataset following the guidelines in the <a href = "coolrdata.html">Downloading the Data</a> page.
+				</div>
+			</div><br>
+			<a data-toggle="collapse" href="#collapseThis6" role="button" aria-expanded="false" aria-controls="collapseThis6">
+				+I used the Global Landslide Catalog (GLC) in my research. How do I cite it?
+			</a>
+			<div class="collapse" id="collapseThis6">
+				<div class="card card-body">
+					If you use the Global Landslide Catalog (GLC) in your research publication, we request that you reference the GLC database following the instructions on the <a href = "coolrdata.html">Downloading the Data</a> page.
+				</div>
+			</div><br>
+			<a data-toggle="collapse" href="#collapseThis7" role="button" aria-expanded="false" aria-controls="collapseThis7">
+				+Is COOLR data currently being used for landslide research?
+			</a>
+			<div class="collapse" id="collapseThis7">
+				<div class="card card-body">
+					COOLR is used to validate the Landslide Hazard Assessment for Situational Awareness (LHASA) model being developed at NASA Goddard Space Flight Center. COOLR data is laid on top of the LHASA model to ensure the model is giving an accurate picture of where it calculates landslides are occurring.
+					For links to the publication and more information
+					about LHASA, see the <a href = "resources.html">Resources</a> page.
+				</div>
+			</div><br>
+			<br>
 		</div> <!-- end of left column -->
 				
 		
