@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- import CSS from Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- import external CSS -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- import JS, Popper.js, and jQuery from Boostrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="index.html">LANDSLIDES @ NASA</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="about.html">About
+				</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Report Landslides
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="getstarted.html">Get Started</a>
+				<a class="dropdown-item" href="reporterapp.html">Using the Landslide Reporter App</a>
+				<a class="dropdown-item active" href="makereport.html">Make a Report</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Data
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="viewerapp.html">Using the Landslide Viewer App</a>
+					<a class="dropdown-item" href="coolrdata.html">Downloading the Data</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Resources</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Policies</a>
+			</li>
+			<a href = "https://landslides.nasa.gov/reporter"><button type="button" class="btn btn-outline-info">Reporter</button></a>
+			<a href = "https://landslides.nasa.gov/viewer"><button type="button" class="btn btn-outline-info">Viewer</button></a>
+		</ul>
+	</div>
+  </div>
+</nav> 
+
+<!-- breadcrumbs -->
+<div class = "container">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+			<li class="breadcrumb-item">Report Landslides</li>
+			<li class="breadcrumb-item"><a href = "getstarted.html">Get Started</a></li>
+			<li class="breadcrumb-item"><a href = "reporterapp.html">Using the Landslide Reporter App</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Make a Report</li>
+		</ol>
+	</nav>
+</div>
+
+<!-- Page Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8"> <!-- begin left column -->
+			<h2>Make a Report</h2>
+			<p>Are you ready to contribute to COOLR? Reviewing the Landslide Reporter’s Guide below will help you make a better submission to the database as you browse through basic information on landslides, hone your skills at identifying landslides, step through the report process, and follow tips on pinpointing a landslide’s location.</p>
+			<p>Remember, you can access the application at <a href = "https://landslides.nasa.gov/reporter " target = "_blank"><mark>landslides.nasa.gov/reporter</mark></a>.
+			<h4>Contents</h4>
+			<ul>
+				<li><a href = "#howtoguides">How-to guides</a></li>
+				<li><a href = "#makenextstep">Next steps</a>
+				<li><a href = "#extresources">External resources</a></li>
+				
+			</ul>
+			
+			<a id = "howtoguides"></a><h3>How-to guides</h3>
+			<table class = "table table-striped">
+				<tr>
+					<td><a href = "guides/COOLRGuide_Primer.pdf" target="_blank"><img src = "images/thumb_guideprimer.png" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+					<td><p><a href = "guides/COOLRGuide_Primer.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Primer and Landslide Identification</span></a></p>
+					<p>The basics of landslides and why we study them. For those who are new to landslides, you can read about how to identify landslide types, from rock falls to creeps.</p></td>
+				</tr>
+				<tr>
+					<td><a href = "guides/COOLRGuide_Training.pdf" target="_blank"><img src = "images/thumb_guidetraining.png" width = "100px" style = "float:left; padding-right:10px;"></a>
+					<td><p><a href = "guides/COOLRGuide_Training.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Landslide Identification Training</span></a></p>
+					<p>Train your eye to identify landslides by their type and size in preparation for submitting using Landslide Reporter. An image and description is displayed on each page and its respective size and categorizations on the following page. Use the classification and size charts from the Landslide Primer chapter to help identify.</p></td>
+				</tr>
+				<tr>
+					<td><a href = "guides/COOLRGuide_AddEvent.pdf" target="_blank"><img src = "images/thumb_guideaddevent.png" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+					<td><p><a href = "guides/COOLRGuide_AddEvent.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Add a Landslide Event to COOLR</span></a></p>
+					<p>The step-by-step instructions for submitting a landslide event to COOLR. Let this guide walk you through everything from finding a landslide to how to fill out each category, and then how to go back and review your submissions.</p></td>
+				</tr>
+				<tr>
+					<td><a href = "guides/COOLRGuide_LocationTips.pdf" target="_blank"><img src = "images/thumb_guidelocation.png" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+					<td><p><a href = "guides/COOLRGuide_LocationTips.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Tips to Pinpoint Landslide Location from a News Article</span></a></p>
+					<p>When reporting landslides from a news article, it may be challenging to find exactly where the landslide occurred. This guide gives suggestions on how to use keywords to hone in on the location, discusses location accuracy, and shows how to use Google Maps or Google Earth to your advantage.</p></td>
+				</tr>
+			</table>
+			<a id = "extresources"></a><h3>External resources</h3>
+			<i>More general landslide information</i>
+			<ol>
+				<li><a href = "https://pubs.usgs.gov/fs/2004/3072/fs-2004-3072.html" target="_blank">Landslide Types and Processes (USGS)</a>
+				<li><a href = "http://www.conservation.ca.gov/cgs/geologic_hazards/landslides/Pages/LandslideTypes.aspx" target="_blank">Types of Landslides (California Geological Survey)</a>
+				<li><a href = "https://www.dnr.wa.gov/programs-and-services/geology/geologic-hazards/landslides#.3" target="_blank">Why Do Landslides Happen? (Washington State DNR)</a>
+				<li><a href = "https://volcanoes.usgs.gov/vhp/lahars.html" target="_blank">Lahars (USGS)</a>
+				<li><a href = "https://svs.gsfc.nasa.gov/Gallery/landslides.html" target="_blank">Landslide and Landslide Data Visualizations (NASA)</a>
+				<li><a href = "https://svs.gsfc.nasa.gov/11854" target="_blank">Global Landslide Catalog Video (NASA Goddard Media Studios)</a>
+			</ol>
+			
+			<i>Landslide disaster safety information</i>
+			<ol>
+				<li><a href = "http://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide" target="_blank">Landslide Safety (Red Cross)</a>
+				<li><a href = "https://www.ready.gov/landslides-debris-flow" target="_blank">Landslides & Debris Flow Emergencies (US DHS)</a>
+				<li><a href = "http://file.dnr.wa.gov/publications/ger_homeowners_guide_landslides.pdf" target="_blank">Homeowners' Guide to Landslides (Washington GS and Oregno DOGAMI)</a>
+			</ol>
+			
+			<i>Relevant websites</i>
+			<ol>
+				<li><a href = "https://landslides.usgs.gov/" target="_blank">US Geological Survey (USGS) Landslide Hazards Program</a>
+				<li><a href = "https://pmm.nasa.gov/applications/landslides" target="_blank">NASA Precipitation Measurement Missions (PMM) Landslide Applications</a>
+			</ol>
+			
+			<a id = "makenextstep"></a><h3>Next steps</h3>
+			<a href = "https://landslides.nasa.gov/reporter" target="_blank"><img class = "clickablebuttonGO" src = "images/clickablebutton_LRgo.png" alt = "click to go to Landslide Reporter"></a>
+			<a href = "viewerapp.html"><img class = "clickablebuttonLR" src = "images/clickablebutton_LVusing.png" alt = "Click to navigate to Using Landslide Viewer"></a>
+			<br><br>
+		</div>
+		<!-- end left column -->
+		
+		<div class="col-sm-4"> <!-- begin right column -->
+			<h2 class = "mt-4">Connect with Us</h2>
+			<p>Twitter: <a href = "https://twitter.com/LandslideReport" target = "_blank">@LandslideReport</a>
+				<br>Facebook: <a href = "https://www.facebook.com/LandslideReporter" target = "_blank">LandslideReporter</a>
+				<br>SciStarter: <a href = "https://scistarter.com/project/19540-Landslide-Reporter">Join us on our project page</a>
+				<br>Google Groups: <a href = "https://groups.google.com/forum/#!forum/landslidereporter">Talk on the Landslide Reporter Community message board</a></p>
+			<h2 class="mt-4">Contact Us</h2>
+			<p>For any questions related to this system, please contact 
+			<a href = "mailto:landslide_support@nccs.nasa.gov?subject=[LANDSLIDES] Your subject here">landslide_support@nccs.nasa.gov</a>.
+			</p>
+		</div>
+		<!-- end right column -->
+	</div>
+	<!-- /.row -->
+</div> <!-- /.container -->
+	  
+	<!-- Footer -->
+
+</body>
+
+<footer class="footer">
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<a href = "https://pmm.nasa.gov/applications/landslides"><img class = "float-left m-3" src = "https://pmm.nasa.gov/sites/default/files/GPM_Logo_Transparent.png" width = "150px"></a>
+			<p class = "text-muted small mt-3">LANDSLIDES @ NASA
+			<br><a href="https://landslides.nasa.gov">landslides.nasa.gov</a></p>
+		</div>
+		<div class="col-sm-4">		
+			<p class = "text-muted mt-3 small"><a href="https://pmm.nasa.gov">+Precipitation Measurement Missions</a>
+			<br><a href="https://nasa.gov/goddard">+Goddard Space Flight Center</a>
+			<br><a href="https://nasa.gov">+NASA.gov</a>
+			<br><a href="https://usa.gov">+USA.gov</a>
+			</p>
+		</div>
+		
+
+		
+	</div>
+	<!-- /.container -->
+</footer>
+
+</html>
