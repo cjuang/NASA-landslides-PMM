@@ -25,7 +25,7 @@
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-				<a class="nav-link active" href="about.html">About
+				<a class="nav-link" href="about.html">About
 				</a>
 			</li>
 			<li class="nav-item dropdown">
@@ -34,16 +34,16 @@
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 				<a class="dropdown-item" href="getstarted.html">Get Started</a>
-				<a class="dropdown-item active" href="#">Using the Landslide Reporter App</a>
+				<a class="dropdown-item" href="reporterapp.html">Using the Landslide Reporter App</a>
 				<a class="dropdown-item" href="makereport.html">Make a Report</a>
 				</div>
 			</li>
 			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Data
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="viewerapp.html">Using the Landslide Viewer App</a>
+					<a class="dropdown-item active" href="viewerapp.html">Using the Landslide Viewer App</a>
 					<a class="dropdown-item" href="coolrdata.html">Downloading the Data</a>
 				</div>
 			</li>
@@ -65,8 +65,8 @@
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-			<li class="breadcrumb-item">Report Landslides</li>
-			<li class="breadcrumb-item active" aria-current="page">Using the Landslide Reporter App</li>
+			<li class="breadcrumb-item">Data</li>
+			<li class="breadcrumb-item active" aria-current="page">Using the Landslide Viewer App</li>
 		</ol>
 	</nav>
 </div>
@@ -75,7 +75,104 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8"> <!-- begin left column -->
-			
+			<h2>Using Landslide Viewer</h2>
+			<p>All approved landslide reports, Global Landslide Catalog data, and other COOLR data appear in <a href = "https://landslides.nasa.gov/viewer" target="_blank">Landslide Viewer.</a> 
+			You can select different layers on the map to organize and visualize the reports and view on top of environmental information and other landslide catalogs.
+			You can also download all landslide data for in-depth analysis.</p>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/oxEPSXTG-6Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<br>
+			<h3>Contents</h3>
+			<ul>
+				<li><a href = "#accessingLV">Accessing the application</a>
+				<li><a href = "#usingLVweb">Using Landslide Viewer on the web</a>
+				<li><a href = "#usingLVmobile">Using Landslide Viewer on your mobile device</a>
+				<li><a href = "#LVlayerlist">COOLR data analysis in Layer List</a>
+				<li><a href = "#LVtimeslider">Using the Time Slider</a>
+				<li><a href = "#LVnextstep">Next steps</a>
+			</ul>
+			<a id = "accessingLV"></a><h2>Accessing the application</h2>
+			<p>Landslide Viewer can be accessed by an internet browser on either your computer or mobile device. The URL for reaching Landslide Viewer is</p>
+			<p><strong><mark><a href = "https://landslides.nasa.gov/viewer" target="_blank">landslides.nasa.gov/viewer</a></mark></strong></p>
+			<p>Upon loading the page, you will be presented with the Terms and Conditions of using Landslide Viewer. Checking the box “I agree to the above terms and conditions” will grant you access to the application.</p>
+			<p>Once logged in, your browser may ask you to use your location. Click “Accept” or “Allow” so that the browser can pinpoint your current location, making it easier for you to submit local events.</p>
+
+			<a id = "usingLVweb"></a><h2>Using Landslide Viewer on the web</h2>
+			<img src = "images/LV Web Schematic.png" alt = "Landslide Viewer screen">
+			<br><br>
+			<i>Main Screen</i>
+			<ol>
+				<li><b>Map navigation: </b>Zoom and search for locations.
+				<li><b>Orange points or polygons: </b>Landslide events added to the Cooperative Open Online Landslide Repository (COOLR). Clicking will open details about a particular event.
+				<li><b>Download: </b>Opens a new page with the link to download the Global Landslide Catalog.
+				<li><b>Bookmark: </b>Your saved/bookmarked locations and the option to add/delete bookmarks. 
+				<li><b>Basemap Gallery: </b>Different options for the base or reference map, like satellite imagery, OpenStreetMap roads, terrain, etc.
+				<li><b>Layer List: </b>Select/deselect what to display on the map, like the database points and polygons, models for flood and landslide risk, etc.
+				<li><b>Time Slider: </b>: Pan through landslide events chronologically. A <a href = "#LVtimeslider">“Time Aware”</a> layer must be selected from Layer List for the Time Slider to be available.
+				<li><b>Print: </b>Save your current map as a downloadable and printable file on your computer.
+				<li><b>About: </b>Information about ArcGIS.
+				<li><b>Draw: </b>Opens a menu with tools to draw points, lines, shapes, and add text to the map.
+				<li><b>Measurement: </b>Measure area, measure distance, and find geographic coordinates.
+		
+			</ol>
+			<a id = "usingLVmobile"></a><h2>Using Landslide Viewer on your mobile device</h2>
+			<img src = "images/LV Mobile Schematic.png?2" alt = "Landslide Viewer screen">
+			<br><br>
+			<i>Main Screen</i>
+			<ol>
+				<li><b>Map navigation: </b>Zoom and search for locations.
+				<li><b>Orange points or polygons: </b>Landslide events added to the Cooperative Open Online Landslide Repository (COOLR). Clicking will open details about a particular event.
+				<li><b>Download: </b>Opens a menu with the link to download the Global Landslide Catalog.
+				<li><b>Bookmark: </b>Your saved/bookmarked locations and the option to add/delete bookmarks. 
+				<li><b>Basemap Gallery: </b>Different options for the map, like satellite imagery, OpenStreetMap roads, terrain, etc.
+				<li><b>Layer List: </b>Select/deselect what to display on the map, like the database points and polygons, models for flood and landslide risk, etc.
+				<li><b>Time Slider: </b>: Pan through landslide events chronologically. A <a href = "#LVtimeslider">“Time Aware”</a> layer must be selected from Layer List for the Time Slider to be available.
+				<li><b>Menu: </b>Opens more Landslide Viewer options.
+				<li><b>Print: </b>Save your current map as a downloadable and printable file on your computer.
+				<li><b>About: </b>Information about ArcGIS.
+				<li><b>Draw: </b>Opens a menu with tools to draw points, lines, shapes, and add text to the map.
+				<li><b>Measurement: </b>Measure area, measure distance, and find geographic coordinates.
+				
+			</ol>
+			<br>
+			<a id = "LVlayerlist"></a><h2>COOLR data analysis options in Layer List</h2>
+			<p>The data from the Cooperative Open Online Landslide Repository (COOLR) can be organized and displayed in several ways on the map. Below are the available options in Layer List
+			<img src = "images/LV layer icon.png">.</p>
+			<table class = "table table-striped">
+				<tr>
+					<th>Data Type</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>Landslide Points/Polygons</td>
+					<td>All points or polygons representing landslide events are marked on the map.</td>
+				</tr>
+				<tr>
+					<td>Fatalities</td>
+					<td>All points are sized by how many fatalities occurred because of the event.</td>
+				</tr>
+				<tr>
+					<td>Trigger</td>
+					<td>All points are colored by the landslide trigger, the direct cause of the landslide.</td>
+				</tr>
+				<tr>
+					<td>Time Aware</td>
+					<td>The points can be played in chronological order in the Time Slider.
+				</tr>
+			</table>
+			<br>
+			<a id = "LVtimeslider"></a><h2>Using the Time Slider</h2>
+			<img src = "images/LV timeslider.png" alt = "Time Slider" width = "400px">
+			<br><br>
+			<p>The Time Slider <img src ="images/LV time icon.png"> allows you to pan through landslide events chronologically. <strong>To use the tool, a Time Aware layer must be selected from the Layer List
+			<img src = "images/LV layer icon.png">.</strong> In Layer List, a Time Aware layer will have the words "Time Aware" next to its name.</p>
+			<p>Once a Time Aware layer is selected, click the Time Slider icon in the menu to open the Time Slider panel. You can press “play” to automatically advance the sliders, change the range of dates, and change the speed of the sliders.</p>
+			<a id = "LVnextstep"></a><h2>Next steps</h2>
+			<a href = "https://landslides.nasa.gov/viewer" target="_blank"><img class = "clickablebuttonGO" src = "images/clickablebutton_LVgo.png" alt = "Click to go to Landslide Viewer"></a>
+			<a href = "coolrdata.html"><img class = "clickablebuttonLR" src = "images/clickablebutton_LVdl.png" alt = "Click to navigate to Downloading the Data"></a>
+			<a href = "reporterapp.html"><img class = "clickablebuttonLR" src = "images/clickablebutton_LRsubmit.png" alt = "Click to navigate to How to Submit to Landslide Reporter"></a>
+			<br><br>
 		</div>
 		<!-- end left column -->
 		
