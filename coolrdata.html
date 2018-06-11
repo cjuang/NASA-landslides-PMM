@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- import CSS from Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- import external CSS -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- import JS, Popper.js, and jQuery from Boostrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="index.html">LANDSLIDES @ NASA</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="about.html">About
+				</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Report Landslides
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="getstarted.html">Get Started</a>
+				<a class="dropdown-item" href="reporterapp.html">Using the Landslide Reporter App</a>
+				<a class="dropdown-item" href="makereport.html">Make a Report</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Data
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item active" href="viewerapp.html">Using the Landslide Viewer App</a>
+					<a class="dropdown-item" href="coolrdata.html">Downloading the Data</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Resources</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Policies</a>
+			</li>
+			<a href = "https://landslides.nasa.gov/reporter"><button type="button" class="btn btn-outline-info">Reporter</button></a>
+			<a href = "https://landslides.nasa.gov/viewer"><button type="button" class="btn btn-outline-info">Viewer</button></a>
+		</ul>
+	</div>
+  </div>
+</nav> 
+
+<!-- breadcrumbs -->
+<div class = "container">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+			<li class="breadcrumb-item">Data</li>
+			<li class="breadcrumb-item active" aria-current="page">Using the Landslide Viewer App</li>
+		</ol>
+	</nav>
+</div>
+
+<!-- Page Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8"> <!-- begin left column -->
+			
+		</div>
+		<!-- end left column -->
+		
+		<div class="col-sm-4"> <!-- begin right column -->
+			<h2 class = "mt-4">Connect with Us</h2>
+			<p>Twitter: <a href = "https://twitter.com/LandslideReport" target = "_blank">@LandslideReport</a>
+				<br>Facebook: <a href = "https://www.facebook.com/LandslideReporter" target = "_blank">LandslideReporter</a>
+				<br>SciStarter: <a href = "https://scistarter.com/project/19540-Landslide-Reporter">Join us on our project page</a>
+				<br>Google Groups: <a href = "https://groups.google.com/forum/#!forum/landslidereporter">Talk on the Landslide Reporter Community message board</a></p>
+			<h2 class="mt-4">Contact Us</h2>
+			<p>For any questions related to this system, please contact 
+			<a href = "mailto:landslide_support@nccs.nasa.gov?subject=[LANDSLIDES] Your subject here">landslide_support@nccs.nasa.gov</a>.
+			</p>
+		</div>
+		<!-- end right column -->
+	</div>
+	<!-- /.row -->
+</div> <!-- /.container -->
+	  
+	<!-- Footer -->
+
+</body>
+
+<footer class="footer">
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<a href = "https://pmm.nasa.gov/applications/landslides"><img class = "float-left m-3" src = "https://pmm.nasa.gov/sites/default/files/GPM_Logo_Transparent.png" width = "150px"></a>
+			<p class = "text-muted small mt-3">LANDSLIDES @ NASA
+			<br><a href="https://landslides.nasa.gov">landslides.nasa.gov</a></p>
+		</div>
+		<div class="col-sm-4">		
+			<p class = "text-muted mt-3 small"><a href="https://pmm.nasa.gov">+Precipitation Measurement Missions</a>
+			<br><a href="https://nasa.gov/goddard">+Goddard Space Flight Center</a>
+			<br><a href="https://nasa.gov">+NASA.gov</a>
+			<br><a href="https://usa.gov">+USA.gov</a>
+			</p>
+		</div>
+		
+
+		
+	</div>
+	<!-- /.container -->
+</footer>
+
+</html>
