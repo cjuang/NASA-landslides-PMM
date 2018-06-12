@@ -35,7 +35,7 @@
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 				<a class="dropdown-item" href="getstarted.html">Get Started</a>
 				<a class="dropdown-item active" href="#">Using the Landslide Reporter App</a>
-				<a class="dropdown-item" href="makereport.html">Make a Report</a>
+				<a class="dropdown-item" href="report.html">Make a Report</a>
 				</div>
 			</li>
 			<li class="nav-item dropdown">
@@ -48,10 +48,10 @@
 				</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Resources</a>
+				<a class="nav-link" href="resources.html">Resources</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Policies</a>
+				<a class="nav-link" href="privacy.html">Policies</a>
 			</li>
 			<a href = "https://landslides.nasa.gov/reporter"><button type="button" class="btn btn-outline-info">Reporter</button></a>
 			<a href = "https://landslides.nasa.gov/viewer"><button type="button" class="btn btn-outline-info">Viewer</button></a>
@@ -60,22 +60,11 @@
   </div>
 </nav> 
 
-<!-- breadcrumbs -->
-<div class = "container">
-	<nav aria-label="breadcrumb">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-			<li class="breadcrumb-item">Report Landslides</li>
-			<li class="breadcrumb-item"><a href = "getstarted.html">Get Started</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Using the Landslide Reporter App</li>
-		</ol>
-	</nav>
-</div>
-
 <!-- Page Content -->
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8"> <!-- begin left column -->
+			<img src = "images/LRlogo.png" style = "float:right; padding:2px; margin-top:1.5rem;">
 			<h2 class="mt-4">Using the Landslide Reporter App</h2>
 			<p><a href = "https://landslides.nasa.gov/reporter" target="_blank">Landslide Reporter</a> is the submission portal for COOLR. When you find a landslide event through a news article or
 			in-person, you can open the web application to add information about the location, date, type of landslide, 
@@ -107,7 +96,7 @@
 			<ol>
 				<li><b>Map navigation: </b>Zoom and search for locations
 				<li><b>Red points or polygons: </b>Your previously-submitted landslide reports.
-				<li><b>Landslide Reporter Map Sidebar: </b>The sidebar for submitting new landslide reports to the database. See the <a href = "makereport.html"> how-to guides</a> for how to submit a report.
+				<li><b>Landslide Reporter Map Sidebar: </b>The sidebar for submitting new landslide reports to the database. See the <a href = "report.html"> how-to guides</a> for how to submit a report.
 				<li><b>Orange points or polygons: </b>Landslide events added to the Cooperative Open Online Landslide Repository (COOLR). Cannot be clicked.
 				<li><b>Username/Menu: </b>Opens a drop-down menu to see your previous submissions or log out of your account.
 				<li><b>Terms and Conditions: </b>Opens the Terms and Conditions for using Landslide Reporter.
@@ -118,7 +107,7 @@
 			<br><br><i>Main screen</i>
 			<ol>
 				<li><b>Menu: </b>See your previous submissions, review the Terms and Conditions of using Landslide Reporter, or sign out of your account.</li>
-				<li><b>Landslide Reporter Map: </b>The main screen for submitting new reports to the database or viewing the map. See the <a href = "makereport.html"> how-to guides</a> for how to submit a report.
+				<li><b>Landslide Reporter Map: </b>The main screen for submitting new reports to the database or viewing the map. See the <a href = "report.html"> how-to guides</a> for how to submit a report.
 			</ol>
 
 			<i>List view</i>
@@ -139,19 +128,25 @@
 			</ol>
 			<br><br>
 			<a id = "nextstep"></a><h3>Next steps</h3>
-			<a href = "makereport.html"><img class = "img-fluid clickablebuttonLR" src = "images/clickablebutton_LRmake.png" alt = "Click to navigate to Make a Report"></a>
+			<a href = "report.html"><img class = "img-fluid clickablebuttonLR" src = "images/clickablebutton_LRmake.png" alt = "Click to navigate to Make a Report"></a>
 			<br><br>
 
 		</div>
 		<!-- end left column -->
 		
 		<div class="col-sm-4"> <!-- begin right column -->
-			<h2 class = "mt-4">Connect with Us</h2>
+			<h3 class = "mt-4">Report Landslides</h3>
+			<div class="list-group">
+				<a href="getstarted.html" class="list-group-item list-group-item-action">Get Started</a>
+				<a href="#" class="list-group-item list-group-item-action active">Using the Landslide Reporter App</a>
+				<a href="report.html" class="list-group-item list-group-item-action">Make a Report</a>
+			</div>
+			<h4 class = "mt-4">Connect with Us</h4>
 			<p>Twitter: <a href = "https://twitter.com/LandslideReport" target = "_blank">@LandslideReport</a>
 				<br>Facebook: <a href = "https://www.facebook.com/LandslideReporter" target = "_blank">LandslideReporter</a>
 				<br>SciStarter: <a href = "https://scistarter.com/project/19540-Landslide-Reporter">Join us on our project page</a>
 				<br>Google Groups: <a href = "https://groups.google.com/forum/#!forum/landslidereporter">Talk on the Landslide Reporter Community message board</a></p>
-			<h2 class="mt-4">Contact Us</h2>
+			<h4 class="mt-4">Contact Us</h4>
 			<p>For any questions related to this system, please contact 
 			<a href = "mailto:landslide_support@nccs.nasa.gov?subject=[LANDSLIDES] Your subject here">landslide_support@nccs.nasa.gov</a>.
 			</p>
