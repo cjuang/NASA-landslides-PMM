@@ -3,14 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- import CSS from Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--<script language="javascript" id="_fed_an_ua_tag" src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
+	-->
+	<!-- import Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.min.css">
 	<!-- import external CSS -->
 	<link rel="stylesheet" href="styles.css">
-	<!-- import JS, Popper.js, and jQuery from Boostrap -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- import Bootstrap JS -->
+	<script src="jquery/jquery-3.3.1.min.js"></script>
+	<script src ="bootstrap-4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -28,24 +29,13 @@
 				<a class="nav-link" href="about.html">About
 				</a>
 			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Report Landslides
+			<li class="nav-item">
+				<a class="nav-link" href="report.html">Report Landslides
 				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-				<a class="dropdown-item" href="getstarted.html">Get Started</a>
-				<a class="dropdown-item" href="reporterapp.html">Using the Landslide Reporter App</a>
-				<a class="dropdown-item" href="report.html">Make a Report</a>
-				</div>
 			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Data
+			<li class="nav-item">
+				<a class="nav-link" href="coolrdata.html">Data
 				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="viewerapp.html">Using the Landslide Viewer App</a>
-					<a class="dropdown-item" href="coolrdata.html">Downloading the Data</a>
-				</div>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link active" href="#">Resources</a>
@@ -65,24 +55,25 @@
 	<div class="row">
 		<div class="col-sm-8"> <!-- begin left column -->
 			<h2 class="mt-4">Resources</h2>
-			<h4>Contents</h4>
-			<ul>
-				<li><a href = "#publications">Journal publications</a></li>
-				<li><a href = "#media">Media</a></li>
-				<li><a href = "#LHASA">Landslide Hazard Assessment for Situational Awareness (LHASA) model</a></li>
-				<li><a href = "#GLC">Global Landslide Catalog (GLC)</a></li>
-				<li><a href = "#inventories">Other landslide inventories</a></li>
-				<li><a href = "#extwebsites">External websites</a></li>
-				
-			</ul>
-			<a id = "publications"></a><h3>Journal publications</h3>
+			<div class = "emphasisGray">
+				<h4>Contents</h4>
+				<ul>
+					<li><a href = "#publications">Journal Publications</a></li>
+					<li><a href = "#media">In the Media</a></li>
+					<li><a href = "#LHASA">Landslide Hazard Assessment for Situational Awareness (LHASA) model</a></li>
+					<li><a href = "#GLC">Global Landslide Catalog (GLC)</a></li>
+					<li><a href = "#inventories">Other Landslide Inventories</a></li>
+					<li><a href = "#extwebsites">External Websites</a></li>
+				</ul>
+			</div>
+			<a id = "publications"></a><h3 class = "mt-4">Journal Publications</h3>
 			<ul>
 				<li>Kirschbaum, D. and Stanley, T. (2018). Satellite-Based Assessment of Rainfall-Triggered Landslide Hazard for Situational Awareness. <i>Earth's Future</i>. doi:<a href = "https://doi.org/10.1002/2017EF000715">10.1002/2017EF000715</a>.
 				<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015), Spatial and temporal analysis of a global landslide catalog. <i>Geomorphology, 249</i>, 4-15. doi:<a href = "https://doi.org/10.1016/j.geomorph.2015.03.016">10.1016/j.geomorph.2015.03.016</a>.
 				<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010), A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards, 52,</i> 561-575. doi:<a href = "https://doi.org/10.1007/s11069-009-9401-4">10.1007/s11069-009-9401-4</a>.
 			</ul>
 			
-			<a id = "media"></a><h3>Media</h3>
+			<a id = "media"></a><h3 class = "mt-4">In the Media</h3>
 			<ul>
 				<li><a href = "http://www.un-spider.org/news-and-events/news/nasa-builds-open-global-landslide-catalog-improve-disaster-preparedness">"NASA builds open global landslide catalog to improve disaster preparedness"</a>, <i>UNOOSA UN-SPIDER Knowledge Portal</i>, Vienna, Austria (June 7, 2018)</li>
 				<li><a href = "http://earthsky.org/earth/help-nasa-create-worlds-largest-landslide-database">"Help NASA create the word's largest landslide database"</a>, <i>EarthSky</i>, Austin, TX (May 7, 2018)</li>
@@ -99,7 +90,7 @@
 				<li><a href = "https://pmm.nasa.gov/articles/modeling-landslide-threats-near-realtime">"Modeling Landslide Threats in Near Realtime"</a>, <i>NASA Precipitation Measurement Missions</i>, Greenbelt, MD (March 22, 2018)</li>
 				<li><a href = "https://www.nasa.gov/feature/goddard/2018/new-from-nasa-tracking-landslide-hazards-new-nasa-model-finds-landslide-threats-in-near-real">"New NASA Model Finds Landslide Threats in Near Real-Time During Heavy Rains"</a>, <i>NASA</i>, Greenbelt, MD (March 22, 2018)
 			</ul>
-			<a id = "LHASA"></a><h3>Landslide Hazard Assessment for Situational Awareness (LHASA) model</h3>
+			<a id = "LHASA"></a><h3 class = "mt-4">Landslide Hazard Assessment for Situational Awareness (LHASA) model</h3>
 			<p>The global Landslide Hazard Assessment for Situational Awareness (LHASA) <a href = "https://pmm.nasa.gov/resources/glossary#model" target = "_blank">model</a> was developed to provide situational awareness of landslide hazards for a wide range of users. <a href = "https://pmm.nasa.gov/resources/glossary#precipitation" target = "_blank">Precipitation</a> is a common trigger of landslides. The <a href = "https://pmm.nasa.gov/GPM" target = "_blank">GPM</a> Integrated Multi-satellitE Retrievals for GPM (<a href = "https://pmm.nasa.gov/resources/acronyms#IMERG" target = "_blank">IMERG</a>) data shows recent precipitation, updated every thirty minutes. 
 			A LHASA landslide “nowcast” is created by comparing GPM data from the last seven days to the long-term precipitation record provided by the Tropical Rainfall Measuring Mission (<a href = "https://pmm.nasa.gov/resources/acronyms#TRMM" target = "_blank">TRMM</a>) Multi-satellite Precipitation Analysis (<a href = "https://pmm.nasa.gov/resources/acronyms#TMPA" target = "_blank">TMPA</a>). 
 			Because IMERG data was only available starting in 2014, the record of historical rainfall was established by TMPA, comparing 2001-present. The TMPA rainfall probability distributions were then compared to that of IMERG and the rainfall thresholds were adjusted so that the IMERG data more closely mapped to those of the TMPA archive. The past 7 days of rainfall are considered, with each day weighted according to their date before present, with the last twenty-four hours having the most impact.</p>
@@ -109,7 +100,7 @@
 				<figcaption class = "figure-caption">An example of the LHASA landslide nowcast in Europe. Red denotes high landslide risk and yellow denotes moderate landslide risk. Image from <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> with added map legend.</figcaption>
 			</figure>
 			<br>
-			<a id = "GLC"></a><h3>Global Landslide Catalog (GLC)</h3>
+			<a id = "GLC"></a><h3 class = "mt-4">Global Landslide Catalog (GLC)</h3>
 			<p>The NASA Global Landslide Catalog (GLC) is the largest openly available global database of rainfall-triggered mass movements known to date.
 			The database was created in at NASA Goddard Space Flight Center and currently contains more than 11,000 reports on landslides, debris flows, rock avalanches, etc. around the world. Reports of landslides are found primarily from online media, including news articles as well as other databases. 
 			The GLC has been compiled by scientists, interns and other colleagues at NASA GSFC. The GLC has been cited more than 75 times in peer-reviewed articles. It is now a part of the Cooperative Open Online Landslide Repository (COOLR)'s vast database that also contains citizen science data and, in the future, other landslide inventories.
@@ -119,7 +110,7 @@
 				<img class = "img-fluid" src = "images/GLC2017_ReportedFatalities.jpg" alt = "Reported fatalities from rainfall-triggered landslides, recorded in the GLC, 2007-2017">
 				<figcaption class = "figure-caption">The distribution of reported fatalities from 10,804 rainfall-triggered landslides in the GLC, 2007-2017. White dots represent incidents with zero reported fatalities. Dots in the color scale from pink to red represent incidents with fatalities in the range of 1-5000. Image from <a href = "https://svs.gsfc.nasa.gov/4632">NASA's Scientific Visualization Studio</a>.</figcaption>
 			</figure>
-			<a id = "inventories"></a><h3>Other landslide inventories</h3>
+			<a id = "inventories"></a><h3 class = "mt-4">Other Landslide Inventories</h3>
 			<h5>United States</h5>
 			<ul>
 				<li>Arizona: <a href = "http://data.azgs.az.gov/hazard-viewer/">Natural Hazards in Arizona (Arizona Geological Survey)</a></li>
@@ -128,7 +119,7 @@
 				<li>Washington: <a href = "https://geologyportal.dnr.wa.gov/#natural_hazards">Washington Geologic Information Portal (Washington DNR)</a>
 			</ul>
 			
-			<a id = "extwebsites"></a><h3>External websites</h3>
+			<a id = "extwebsites"></a><h3 class = "mt-4">External Websites</h3>
 			<ol>
 				<li><a href = "https://landslides.usgs.gov/" target="_blank">US Geological Survey (USGS) Landslide Hazards Program</a>
 				<li><a href = "https://pmm.nasa.gov/applications/landslides" target="_blank">NASA Precipitation Measurement Missions (PMM) Landslide Applications</a>
