@@ -28,24 +28,13 @@
 				<a class="nav-link" href="about.html">About
 				</a>
 			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Report Landslides
+			<li class="nav-item">
+				<a class="nav-link" href="report.html">Report Landslides
 				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-				<a class="dropdown-item" href="getstarted.html">Get Started</a>
-				<a class="dropdown-item" href="reporterapp.html">Using the Landslide Reporter App</a>
-				<a class="dropdown-item" href="report.html">Make a Report</a>
-				</div>
 			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Data
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Data
 				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="viewerapp.html">Using the Landslide Viewer App</a>
-					<a class="dropdown-item active" href="#">Downloading the Data</a>
-				</div>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="resources.html">Resources</a>
@@ -65,17 +54,26 @@
 	<div class="row">
 		<div class="col-sm-8"> <!-- begin left column -->
 			<img src = "images/LVlogo.png" style = "float:right; padding:2px; margin-top:1.5rem;">
-			<h2 class="mt-4">Downloading the Data</h2>
-			<h4>Contents</h4>
-			<ul>
-				<li><a href = "#cite">Citing the data</a></li>
-				<li><a href = "#download">Download COOLR onto your system</a></li>
-				<li><a href = "#reference">Reference COOLR using the ArcGIS REST API</a></li>
-			</ul>
-			
-			<a id = "cite"></a><h3>Citing the data</h3>
+			<h2 class = "mt-4">COOLR Data</h2>
+			<p>The landslides you report with <a href = "https://landslides.nasa.gov/reporter" target = "_blank">Landslide Reporter</a> are shared with you and the world. The Cooperative Open Online Landslide Repository (COOLR) is openly accessible on <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> and can be downloaded or referenced using its API. When using COOLR for your research, please cite the repository with the citations listed below.
+			</p>
+			<div class = "emphasisGray">
+				<h4>Contents</h4>
+				<ul>
+					<li><a href = "#app">Using the Application</a></li>
+					<li><a href = "#cite">Citing the data</a></li>
+					<li><a href = "#download">Download COOLR onto your system</a></li>
+					<li><a href = "#reference">Reference COOLR using the ArcGIS REST API</a></li>
+				</ul>
+			</div>
+			<a id = "app"></a><h3 class="mt-4">Using the Application</h3>
+			<p><a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> is the portal to visualize the data from the Cooperative Open Online Landslide Repository (COOLR). Data visualized includes citizen science landslide reports, Global Landslide Catalog data, and other landslide catalog data.
+			You can customize the map view by selecting different layers with landslide and environmental information. You can also download all landslide data or get the ArcGIS REST API for in-depth analysis from the portal.</p>
+			<p>For more information on how to navigate Landslide Viewer, <a href = "viewerapp.html">click here</a>.</p>
+
+			<a id = "cite"></a><h3 class="mt-4">Citing the data</h3>
 			<h5>Global Landslide Catalog (GLC)</h5>
-			<p>If you use the <a href = "resources.html#GLC" target = "_blank">Global Landslide Catalog (GLC)</a> in your research publication, we request that you reference the GLC database using the publications below:
+			<p>If you use the <a href = "resources.html" target = "_blank">Global Landslide Catalog (GLC)</a> in your research publication, we request that you reference the GLC database using the publications below:
 			</p>
 			<ul>
 				<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. <i>Geomorphology</i>, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
@@ -83,9 +81,11 @@
 			</ul>
 			</p>
 			
-			<a id = "download"></a><h3>Download COOLR data onto your system</h3>
+			<a id = "download"></a><h3 class="mt-4">Download COOLR data onto your system</h3>
 			<p>The Cooperative Open Online Landslide Inventory (COOLR) can be downloaded from <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> by clicking on the link “Download the full Landslide Catalog” at the top of the application. A new window will open with the information for downloading the GLC and the option to save it to your computer as a <b>file geodatabase (.gdb), shapefile (.shp), or comma-separated values (.csv) file</b>.
 			You can also create and download maps of the Landslide Viewer screen using the Print <img src = "images/LV print icon.png"> option in the top right-hand menu in Landslide Viewer.</p>
+			<a class="btn btn-danger btn-lg mb-4" href="https://landslides.nasa.gov/viewer" target = "_blank">Open Landslide Viewer &raquo;</a>
+
 			<p>Below, the video illustrates how to download COOLR from Landslide Viewer. The How-To Guide goes more in-depth on how to download and export the .gdb version of COOLR to ArcMap or QGIS.</p>
 			<h5>Download the catalog from Landslide Viewer</h5>
 			<div class="embed-responsive embed-responsive-16by9">
@@ -100,7 +100,7 @@
 				</tr>
 			</table>
 			<br>
-			<a id = "reference"></a><h3>Reference COOLR using the ArcGIS REST API</h3>
+			<a id = "reference"></a><h3 class="mt-4">Reference COOLR using the ArcGIS REST API</h3>
 			
 			<h5>Get the REST API from Landslide Viewer</h5>
 			<p>The Cooperative Open Online Landslide Inventory (COOLR) can be added to any ArcGIS Map or Web App with the <a href = "https://developers.arcgis.com/rest/services-reference/get-started-with-the-services-directory.htm" target = "_blank">ArcGIS REST API</a>.
@@ -121,10 +121,10 @@
 		<!-- end left column -->
 		
 		<div class="col-sm-4"> <!-- begin right column -->
-			<h3 class = "mt-4">Data</h3>
+			<h4 class = "mt-4">Related Pages</h4>
 			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action active">Data</a>
 				<a href="viewerapp.html" class="list-group-item list-group-item-action">Using Landslide Viewer</a>
-				<a href="#" class="list-group-item list-group-item-action active">Downloading the Data</a>
 			</div>
 			<h4 class = "mt-4">Connect with Us</h4>
 			<p>Twitter: <a href = "https://twitter.com/LandslideReport" target = "_blank">@LandslideReport</a>
