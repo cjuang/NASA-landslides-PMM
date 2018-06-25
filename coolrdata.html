@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- import CSS from Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script language="javascript" id="_fed_an_ua_tag" src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
+	<!-- import Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.min.css">
 	<!-- import external CSS -->
 	<link rel="stylesheet" href="styles.css">
-	<!-- import JS, Popper.js, and jQuery from Boostrap -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- import Bootstrap JS -->
+	<script src="jquery/jquery-3.3.1.min.js"></script>
+	<script src ="bootstrap-4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -67,13 +67,15 @@
 				</ul>
 			</div>
 			<a id = "app"></a><h3 class="mt-4">Using the Application</h3>
-			<p><a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> is the portal to visualize the data from the Cooperative Open Online Landslide Repository (COOLR). Data visualized includes citizen science landslide reports, Global Landslide Catalog data, and other landslide catalog data.
+			<p><a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> is the portal to visualize the data from the Cooperative Open Online Landslide Repository (COOLR).
+			You can access Landslide Viewer at <a href = "https://landslides.nasa.gov/viewer"><mark>landslides.nasa.gov/viewer</mark></a>.
+			Data visualized include citizen science landslide reports, Global Landslide Catalog data, and other landslide catalog data.
 			You can customize the map view by selecting different layers with landslide and environmental information. You can also download all landslide data or get the ArcGIS REST API for in-depth analysis from the portal.</p>
 			<p>For more information on how to navigate Landslide Viewer, <a href = "viewerapp.html">click here</a>.</p>
 
 			<a id = "cite"></a><h3 class="mt-4">Citing the data</h3>
 			<h5>Global Landslide Catalog (GLC)</h5>
-			<p>If you use the <a href = "resources.html" target = "_blank">Global Landslide Catalog (GLC)</a> in your research publication, we request that you reference the GLC database using the publications below:
+			<p>If you use the <a href = "resources.html#GLC" target = "_blank">Global Landslide Catalog (GLC)</a> in your research publication, we request that you reference the GLC database using the publications below:
 			</p>
 			<ul>
 				<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. <i>Geomorphology</i>, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
@@ -105,7 +107,7 @@
 			<h5>Get the REST API from Landslide Viewer</h5>
 			<p>The Cooperative Open Online Landslide Inventory (COOLR) can be added to any ArcGIS Map or Web App with the <a href = "https://developers.arcgis.com/rest/services-reference/get-started-with-the-services-directory.htm" target = "_blank">ArcGIS REST API</a>.
 			The REST API is a live version of COOLR for your map that contains the most recent data, rather than a static copy like the downloadable version. Every time the data is updated on our servers, the data will be automatically updated on your map.
-			The REST API is hosted by the NASA Center for Climate Simulation (<a href = "https://www.nccs.nasa.gov/" target = "_blank">NCCS</a>).
+			The REST API is hosted by the <a href = "https://www.nccs.nasa.gov/" target = "_blank">NASA Center for Climate Simulation (NCCS)</a>.
 			
 			<p><strong>Access the REST API through <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a>.</strong> When in Landslide Viewer, open the Layer List <img src = "images/LV layer icon.png"> and navigate to the layer you want to add.
 			Click on the small arrow <img src = "images/LV item details icon.png"> next to the desired layer. Click on "Description", or click on "Show Item Details">click on the link underneath "Layers". Either of these actions will bring you to
