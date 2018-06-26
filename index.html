@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- run analytics -->
 	<!--<script language="javascript" id="_fed_an_ua_tag" src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
-	-->
 	<!-- import Bootstrap CSS -->
 	<link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.min.css">
 	<!-- import external CSS -->
@@ -13,6 +13,7 @@
 	<script src="jquery/jquery-3.3.1.min.js"></script>
 	<script src ="bootstrap-4.0.0/js/bootstrap.min.js"></script>
 </head>
+
 
 <body>
 
@@ -29,24 +30,13 @@
 				<a class="nav-link" href="about.html">About
 				</a>
 			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Report Landslides
+			<li class="nav-item">
+				<a class="nav-link" href="report.html">How to Report
 				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-				<a class="dropdown-item" href="getstarted.html">Get Started</a>
-				<a class="dropdown-item" href="reporterapp.html">Using the Landslide Reporter App</a>
-				<a class="dropdown-item" href="report.html">Make a Report</a>
-				</div>
 			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Data
+			<li class="nav-item">
+				<a class="nav-link" href="coolrdata.html">Data
 				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="viewerapp.html">Using the Landslide Viewer App</a>
-					<a class="dropdown-item" href="coolrdata.html">Downloading the Data</a>
-				</div>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="resources.html">Resources</a>
@@ -54,8 +44,8 @@
 			<li class="nav-item">
 				<a class="nav-link" href="privacy.html">Policies</a>
 			</li>
-			<a href = "https://landslides.nasa.gov/reporter"><button type="button" class="btn btn-outline-info">Reporter</button></a>
-			<a href = "https://landslides.nasa.gov/viewer"><button type="button" class="btn btn-outline-info">Viewer</button></a>
+			<li><a href = "https://landslides.nasa.gov/reporter"><button type="button" class="btn btn-outline-info">Reporter</button></a>&nbsp;</li>
+			<li><a href = "https://landslides.nasa.gov/viewer"><button type="button" class="btn btn-outline-info">Viewer</button></a></li>
 		</ul>
 	</div>
   </div>
@@ -67,8 +57,8 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<br>
-				<img src = "images/LRlogo.png"> <img src = "images/LVlogo.png"><br>
-				<p id = "top-title" class="h1 mt-4">Together, we can build a greater picture of landslides.</p>
+				<img src = "images/LRlogo.png">&emsp; <img src = "images/LVlogo.png"><br>
+				<p id = "top-title" class="h1 mt-4">Together, we can build a clearer picture of landslides.</p>
 			</div>
 		</div>
 	</div>
@@ -80,10 +70,10 @@
 	<div class = "row emphasisGray">
 		<div class = "col-sm-4">
 			<h2 class = "mt-4">Your Mission</h2>
-			<p>NASA scientists are building a catalog of landslides so we can be prepared when the next disasters will occur. You can help influence decisions that could save lives and property today.</p>
+			<p>NASA scientists are building a catalog of landslides so we can be prepared when the next disasters will occur. You can help inform decisions that could save lives and property today.</p>
 			<a class="btn btn-danger btn-lg" href="report.html">Report Landslides &raquo;</a>
 		</div>
-		<div class = "col-sm-4 text-center">
+		<div class = "col-sm-4 text-center mt-4">
 			<img class = "img-fluid" src = "images/Icon index reporting.png" alt = "Report a landslide today">
 		</div>		
 		<div class = "col-sm-4">
@@ -91,10 +81,10 @@
 			<p>Twitter: <a href = "https://twitter.com/LandslideReport" target = "_blank">@LandslideReport</a>
 			<br>Facebook: <a href = "https://www.facebook.com/LandslideReporter" target = "_blank">LandslideReporter</a>
 			<br>SciStarter: <a href = "https://scistarter.com/project/19540-Landslide-Reporter">Join us on our project page</a>
-			<br>Google Groups: <a href = "https://groups.google.com/forum/#!forum/landslidereporter">Talk on the Landslide Reporter Community message board</a></p>
+			<h4 class = "mt-4">Connect with the Community</h4>
+			Google Groups: <a href = "https://groups.google.com/forum/#!forum/landslidereporter">Landslide Reporter Community</a></p>
 		</div>
-
-	</div>
+	</div> <!-- end row -->
 	<div class = "row">
 		<div class = "col-sm-6">
 			<div class=" mt-4 embed-responsive embed-responsive-16by9">
@@ -104,15 +94,17 @@
 		<div class = "col-sm-6">
 			<h2 class = "mt-4">The Project</h2>
 			<p>Landslides cause billions of dollars in infrastructural damage and thousands of deaths every year worldwide. Data on past landslide events guides future disaster prevention, but to date we do not have a global picture of exactly when and where landslides occur. NASA is building the biggest open global landslide catalog to address this problem, and we need your help! 
-			<p>The Cooperative Open Online Landslide Repository, or COOLR, is an open platform where scientists and citizen scientists can share landslide reports. See all landslide data from COOLR with other scientific data using the Landslide Viewer application. Want to contribute? Add to COOLR using our citizen science application, Landslide Reporter.
+			<p>The <strong>Cooperative Open Online Landslide Repository, or COOLR,</strong> is an open platform where scientists and citizen scientists can share landslide reports. See all landslide data from COOLR with other scientific data using the Landslide Viewer application. 
+			<strong>Want to contribute? </strong>Add to COOLR using our citizen science application, <strong><a href = "https://landslides.nasa.gov/reporter" target = "_blank">Landslide Reporter</a>.</strong>
 			<p>With more hands and your help, we can complete the global picture of landslides to prepare for and protect against future disasters.
 			</p>
 			<a class="btn btn-danger btn-lg mb-4" href="about.html">Learn More &raquo;</a>
 		</div>
+	</div> <!-- end row -->
 	<div class = "row">
 		<div class = "col-sm-8">
-			<h2 class = "mt-4 ml-4">Our Team</h2>
-			<p class = "ml-4">Landslides @ NASA is a project of NASA's Precipitation Measurement Missions which uses satellite data and citizen science data to model and catalog landslides around the world.
+			<h2 class = "mt-4">Our Team</h2>
+			<p>Landslides @ NASA is a project of NASA's Precipitation Measurement Missions which uses satellite data and citizen science data to model and catalog landslides around the world.
 			We are based at NASA Goddard Space Flight Center.</p>
 		</div>
 		<div class = "col-sm-4">
@@ -121,25 +113,8 @@
 			<a href = "mailto:landslide_support@nccs.nasa.gov?subject=[LANDSLIDES] Your subject here">landslide_support@nccs.nasa.gov</a>.
 			</p>
 		</div>
-		<div class = "col-sm-4">
-		</div>
-		
-
-	</div>
-	<div class = "row">
-		<div class = "col-sm-6">
-		</div>
-		<div class = "col-sm-6">
-			
-		</div>
-	</div>
-		<!-- right column -->
-		<div class="col-sm-4">
-			
-		</div>
-	</div>
-	<!-- /.row -->
-</div> <!-- /.container -->
+	</div> <!-- end row -->
+</div> <!-- end container -->
 	  
 	<!-- Footer -->
 
@@ -147,24 +122,22 @@
 
 <footer class="footer">
 	<div class="container">
-	<div class="row">
-		<div class="col-sm-8">
-			<a href = "https://pmm.nasa.gov/applications/landslides"><img class = "float-left m-3" src = "https://pmm.nasa.gov/sites/default/files/GPM_Logo_Transparent.png" width = "150px"></a>
-			<p class = "text-muted small mt-3">LANDSLIDES @ NASA
-			<br><a href="https://landslides.nasa.gov">landslides.nasa.gov</a></p>
-		</div>
-		<div class="col-sm-4">		
-			<p class = "text-muted mt-3 small"><a href="https://pmm.nasa.gov">+Precipitation Measurement Missions</a>
-			<br><a href="https://nasa.gov/goddard">+Goddard Space Flight Center</a>
-			<br><a href="https://nasa.gov">+NASA.gov</a>
-			<br><a href="https://usa.gov">+USA.gov</a>
-			</p>
-		</div>
-		
-
-		
+		<div class="row">
+			<div class="col-sm-8">
+				<a href = "https://pmm.nasa.gov/applications/landslides"><img class = "float-left m-3" src = "https://pmm.nasa.gov/sites/default/files/GPM_Logo_Transparent.png" width = "150px"></a>
+				<p class = "text-muted small mt-3">LANDSLIDES @ NASA
+				<br><a href="https://landslides.nasa.gov">landslides.nasa.gov</a></p>
+			</div>
+			<div class="col-sm-4">		
+				<p class = "text-muted mt-3 small"><a href="https://pmm.nasa.gov">+Precipitation Measurement Missions</a>
+				<br><a href="https://nasa.gov/goddard">+Goddard Space Flight Center</a>
+				<br><a href="https://nasa.gov">+NASA.gov</a>
+				<br><a href="https://usa.gov">+USA.gov</a>
+				</p>
+			</div>
+		</div> <!-- end row -->	
 	</div>
-	<!-- /.container -->
+	<!-- end container -->
 </footer>
 
 </html>
