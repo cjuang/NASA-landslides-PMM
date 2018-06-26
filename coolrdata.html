@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script language="javascript" id="_fed_an_ua_tag" src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
+	<!-- run analytics -->
+	<!--<script language="javascript" id="_fed_an_ua_tag" src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
 	<!-- import Bootstrap CSS -->
 	<link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.min.css">
 	<!-- import external CSS -->
@@ -29,7 +30,7 @@
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="report.html">Report Landslides
+				<a class="nav-link" href="report.html">How to Report
 				</a>
 			</li>
 			<li class="nav-item">
@@ -42,8 +43,8 @@
 			<li class="nav-item">
 				<a class="nav-link" href="privacy.html">Policies</a>
 			</li>
-			<a href = "https://landslides.nasa.gov/reporter"><button type="button" class="btn btn-outline-info">Reporter</button></a>
-			<a href = "https://landslides.nasa.gov/viewer"><button type="button" class="btn btn-outline-info">Viewer</button></a>
+			<li><a href = "https://landslides.nasa.gov/reporter"><button type="button" class="btn btn-outline-info">Reporter</button></a>&nbsp;</li>
+			<li><a href = "https://landslides.nasa.gov/viewer"><button type="button" class="btn btn-outline-info">Viewer</button></a></li>
 		</ul>
 	</div>
   </div>
@@ -72,7 +73,6 @@
 			Data visualized include citizen science landslide reports, Global Landslide Catalog data, and other landslide catalog data.
 			You can customize the map view by selecting different layers with landslide and environmental information. You can also download all landslide data or get the ArcGIS REST API for in-depth analysis from the portal.</p>
 			<p>For more information on how to navigate Landslide Viewer, <a href = "viewerapp.html">click here</a>.</p>
-
 			<a id = "cite"></a><h3 class="mt-4">Citing the data</h3>
 			<h5>Global Landslide Catalog (GLC)</h5>
 			<p>If you use the <a href = "resources.html#GLC" target = "_blank">Global Landslide Catalog (GLC)</a> in your research publication, we request that you reference the GLC database using the publications below:
@@ -82,11 +82,10 @@
 				<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations.<i> Natural Hazards</i>, 52, 561-575. doi:10.1007/s11069-009-9401-4
 			</ul>
 			</p>
-			
 			<a id = "download"></a><h3 class="mt-4">Download COOLR data onto your system</h3>
 			<p>The Cooperative Open Online Landslide Inventory (COOLR) can be downloaded from <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> by clicking on the link “Download the full Landslide Catalog” at the top of the application. A new window will open with the information for downloading the GLC and the option to save it to your computer as a <b>file geodatabase (.gdb), shapefile (.shp), or comma-separated values (.csv) file</b>.
 			You can also create and download maps of the Landslide Viewer screen using the Print <img src = "images/LV print icon.png"> option in the top right-hand menu in Landslide Viewer.</p>
-			<a class="btn btn-danger btn-lg mb-4" href="https://landslides.nasa.gov/viewer" target = "_blank">Open Landslide Viewer &raquo;</a>
+			<a class="btn btn-info btn-lg mb-4" href="https://landslides.nasa.gov/viewer" target = "_blank">Open Landslide Viewer &raquo;</a>
 
 			<p>Below, the video illustrates how to download COOLR from Landslide Viewer. The How-To Guide goes more in-depth on how to download and export the .gdb version of COOLR to ArcMap or QGIS.</p>
 			<h5>Download the catalog from Landslide Viewer</h5>
@@ -143,30 +142,28 @@
 	<!-- /.row -->
 </div> <!-- /.container -->
 	  
-	<!-- Footer -->
+
 
 </body>
-
+<!-- Footer -->
 <footer class="footer">
 	<div class="container">
-	<div class="row">
-		<div class="col-sm-8">
-			<a href = "https://pmm.nasa.gov/applications/landslides"><img class = "float-left m-3" src = "https://pmm.nasa.gov/sites/default/files/GPM_Logo_Transparent.png" width = "150px"></a>
-			<p class = "text-muted small mt-3">LANDSLIDES @ NASA
-			<br><a href="https://landslides.nasa.gov">landslides.nasa.gov</a></p>
-		</div>
-		<div class="col-sm-4">		
-			<p class = "text-muted mt-3 small"><a href="https://pmm.nasa.gov">+Precipitation Measurement Missions</a>
-			<br><a href="https://nasa.gov/goddard">+Goddard Space Flight Center</a>
-			<br><a href="https://nasa.gov">+NASA.gov</a>
-			<br><a href="https://usa.gov">+USA.gov</a>
-			</p>
-		</div>
-		
-
-		
+		<div class="row">
+			<div class="col-sm-8">
+				<a href = "https://pmm.nasa.gov/applications/landslides"><img class = "float-left m-3" src = "https://pmm.nasa.gov/sites/default/files/GPM_Logo_Transparent.png" width = "150px"></a>
+				<p class = "text-muted small mt-3">LANDSLIDES @ NASA
+				<br><a href="https://landslides.nasa.gov">landslides.nasa.gov</a></p>
+			</div>
+			<div class="col-sm-4">		
+				<p class = "text-muted mt-3 small"><a href="https://pmm.nasa.gov">+Precipitation Measurement Missions</a>
+				<br><a href="https://nasa.gov/goddard">+Goddard Space Flight Center</a>
+				<br><a href="https://nasa.gov">+NASA.gov</a>
+				<br><a href="https://usa.gov">+USA.gov</a>
+				</p>
+			</div>
+		</div> <!-- end row -->	
 	</div>
-	<!-- /.container -->
+	<!-- end container -->
 </footer>
 
 </html>
