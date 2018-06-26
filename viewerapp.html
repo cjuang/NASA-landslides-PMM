@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script language="javascript" id="_fed_an_ua_tag" src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
+	<!-- run analytics -->
+	<!--<script language="javascript" id="_fed_an_ua_tag" src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
 	<!-- import Bootstrap CSS -->
 	<link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.min.css">
 	<!-- import external CSS -->
@@ -29,7 +30,7 @@
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="report.html">Report Landslides
+				<a class="nav-link" href="report.html">How to Report
 				</a>
 			</li>
 			<li class="nav-item">
@@ -42,8 +43,8 @@
 			<li class="nav-item">
 				<a class="nav-link" href="privacy.html">Policies</a>
 			</li>
-			<a href = "https://landslides.nasa.gov/reporter"><button type="button" class="btn btn-outline-info">Reporter</button></a>
-			<a href = "https://landslides.nasa.gov/viewer"><button type="button" class="btn btn-outline-info">Viewer</button></a>
+			<li><a href = "https://landslides.nasa.gov/reporter"><button type="button" class="btn btn-outline-info">Reporter</button></a>&nbsp;</li>
+			<li><a href = "https://landslides.nasa.gov/viewer"><button type="button" class="btn btn-outline-info">Viewer</button></a></li>
 		</ul>
 	</div>
   </div>
@@ -89,7 +90,7 @@
 			<p>Once logged in, your browser may ask you to use your location. Click “Accept” or “Allow” so that the browser can pinpoint your current location, making it easier for you to submit local events.</p>
 
 			<a id = "web"></a><h3>Using Landslide Viewer on the web</h3>
-			<img src = "images/LV Web Schematic.png" alt = "Landslide Viewer screen">
+			<img class = "img-fluid" src = "images/LV Web Schematic.png" alt = "Landslide Viewer screen">
 			<br><br>
 			<i>Main Screen</i>
 			<ol>
@@ -107,7 +108,7 @@
 		
 			</ol>
 			<a id = "mobile"></a><h3>Using Landslide Viewer on your mobile device</h3>
-			<img src = "images/LV Mobile Schematic.png?2" alt = "Landslide Viewer screen">
+			<img class = "img-fluid" src = "images/LV Mobile Schematic.png" alt = "Landslide Viewer screen">
 			<br><br>
 			<i>Main Screen</i>
 			<ol>
@@ -159,7 +160,7 @@
 			<img src = "images/LV layer icon.png">.</strong> In Layer List, a Time Aware layer will have the words "Time Aware" next to its name.</p>
 			<p>Once a Time Aware layer is selected, click the Time Slider icon in the menu to open the Time Slider panel. You can press “play” to automatically advance the sliders, change the range of dates, and change the speed of the sliders.</p>
 			<br>
-			<a class="btn btn-info btn-lg mb-4" href="coolrdata.html">Back to "Data" &raquo;</a>
+			<a class="btn btn-danger btn-lg mb-4" href="coolrdata.html">Back to "Data" &raquo;</a>
 		</div>
 		<!-- end left column -->
 		
@@ -183,31 +184,27 @@
 	</div>
 	<!-- /.row -->
 </div> <!-- /.container -->
-	  
-	<!-- Footer -->
 
 </body>
-
+<!-- Footer -->
 <footer class="footer">
 	<div class="container">
-	<div class="row">
-		<div class="col-sm-8">
-			<a href = "https://pmm.nasa.gov/applications/landslides"><img class = "float-left m-3" src = "https://pmm.nasa.gov/sites/default/files/GPM_Logo_Transparent.png" width = "150px"></a>
-			<p class = "text-muted small mt-3">LANDSLIDES @ NASA
-			<br><a href="https://landslides.nasa.gov">landslides.nasa.gov</a></p>
-		</div>
-		<div class="col-sm-4">		
-			<p class = "text-muted mt-3 small"><a href="https://pmm.nasa.gov">+Precipitation Measurement Missions</a>
-			<br><a href="https://nasa.gov/goddard">+Goddard Space Flight Center</a>
-			<br><a href="https://nasa.gov">+NASA.gov</a>
-			<br><a href="https://usa.gov">+USA.gov</a>
-			</p>
-		</div>
-		
-
-		
+		<div class="row">
+			<div class="col-sm-8">
+				<a href = "https://pmm.nasa.gov/applications/landslides"><img class = "float-left m-3" src = "https://pmm.nasa.gov/sites/default/files/GPM_Logo_Transparent.png" width = "150px"></a>
+				<p class = "text-muted small mt-3">LANDSLIDES @ NASA
+				<br><a href="https://landslides.nasa.gov">landslides.nasa.gov</a></p>
+			</div>
+			<div class="col-sm-4">		
+				<p class = "text-muted mt-3 small"><a href="https://pmm.nasa.gov">+Precipitation Measurement Missions</a>
+				<br><a href="https://nasa.gov/goddard">+Goddard Space Flight Center</a>
+				<br><a href="https://nasa.gov">+NASA.gov</a>
+				<br><a href="https://usa.gov">+USA.gov</a>
+				</p>
+			</div>
+		</div> <!-- end row -->	
 	</div>
-	<!-- /.container -->
+	<!-- end container -->
 </footer>
 
 </html>
