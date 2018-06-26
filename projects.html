@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- run analytics -->
+	<!--<script language="javascript" id="_fed_an_ua_tag" src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
+	<!-- import Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.min.css">
+	<!-- import external CSS -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- import Bootstrap JS -->
+	<script src="jquery/jquery-3.3.1.min.js"></script>
+	<script src ="bootstrap-4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="index.html">LANDSLIDES @ NASA</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="about.html">About
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="report.html">How to Report
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="coolrdata.html">Data
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="resources.html">Resources</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="privacy.html">Policies</a>
+			</li>
+			<li><a href = "https://landslides.nasa.gov/reporter"><button type="button" class="btn btn-outline-info">Reporter</button></a>&nbsp;</li>
+			<li><a href = "https://landslides.nasa.gov/viewer"><button type="button" class="btn btn-outline-info">Viewer</button></a></li>
+		</ul>
+	</div>
+  </div>
+</nav> 
+
+<!-- breadcrumbs -->
+<div class = "container">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+			<li class="breadcrumb-item"><a href="resources.html">Resources</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Landslide Team Projects</li>
+		</ol>
+	</nav>
+</div>
+
+<!-- Page Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8"> <!-- begin left column -->
+			<h2 class="mt-4">Landslide Team Projects</h2>
+			<p>Learn more about projects by our landslide team, including how COOLR is being used for model validation.</p>
+			<div class = "emphasisGray">
+				<h4>Contents</h4>
+				<ul>
+					<li><a href = "#GLC">Global Landslide Catalog (GLC)</a></li>
+					<li><a href = "#LHASA">Landslide Hazard Assessment for Situational Awareness (LHASA) Model</a></li>
+				</ul>
+			</div>
+			
+			<a id = "GLC"></a><h5 class = "mt-4">Global Landslide Catalog (GLC)</h5>
+			<p>The NASA Global Landslide Catalog (GLC) is the largest openly available global inventory of rainfall-triggered mass movements known to date.
+			The database was created in at NASA Goddard Space Flight Center and currently contains more than 11,000 reports on landslides, debris flows, rock avalanches, etc. around the world. Reports of landslides are found primarily from online media, including news articles as well as other databases. 
+			The GLC has been compiled by scientists, interns and other colleagues at NASA GSFC. The GLC has been cited more than 75 times in peer-reviewed articles. It is now a part of the Cooperative Open Online Landslide Repository (COOLR)'s vast database that also contains citizen science data and, in the future, other landslide inventories.
+			The GLC can be separated from the rest of COOLR in file downloads on <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> by looking for Event Source Catalog name "GLC". For referencing the GLC in research, please see the <a href = "coolrdata.html">Downloading the Data</a> page.</p>
+			<p><strong>Media release about the GLC</strong>: <a href = "https://www.nasa.gov/feature/goddard/global-landslide-catalog-aids-view-from-space" target = "_blank">NASA (April 16, 2015)</a></p>
+			<figure class = "figure">
+				<img class = "img-fluid" src = "images/GLC2017_ReportedFatalities.jpg" alt = "Reported fatalities from rainfall-triggered landslides, recorded in the GLC, 2007-2017">
+				<figcaption class = "figure-caption">The distribution of reported fatalities from 10,804 rainfall-triggered landslides in the GLC, 2007-2017. White dots represent incidents with zero reported fatalities. Dots in the color scale from pink to red represent incidents with fatalities in the range of 1-5000. Image from <a href = "https://svs.gsfc.nasa.gov/4632">NASA's Scientific Visualization Studio</a>.</figcaption>
+			</figure>
+			
+			<a id = "LHASA"></a><h5 class = "mt-4">Landslide Hazard Assessment for Situational Awareness (LHASA) Model</h5>
+			<p>The global Landslide Hazard Assessment for Situational Awareness (LHASA) <a href = "https://pmm.nasa.gov/resources/glossary#model" target = "_blank">model</a> was developed to provide situational awareness of landslide hazards for a wide range of users. <a href = "https://pmm.nasa.gov/resources/glossary#precipitation" target = "_blank">Precipitation</a> is a common trigger of landslides. The <a href = "https://pmm.nasa.gov/GPM" target = "_blank">GPM</a> Integrated Multi-satellitE Retrievals for GPM (<a href = "https://pmm.nasa.gov/resources/acronyms#IMERG" target = "_blank">IMERG</a>) data shows recent precipitation, updated every thirty minutes. 
+			A LHASA landslide “nowcast” is created by comparing GPM data from the last seven days to the long-term precipitation record provided by the Tropical Rainfall Measuring Mission (<a href = "https://pmm.nasa.gov/resources/acronyms#TRMM" target = "_blank">TRMM</a>) Multi-satellite Precipitation Analysis (<a href = "https://pmm.nasa.gov/resources/acronyms#TMPA" target = "_blank">TMPA</a>). 
+			Because IMERG data was only available starting in 2014, the record of historical rainfall was established by TMPA, comparing 2001-present. The TMPA rainfall probability distributions were then compared to that of IMERG and the rainfall thresholds were adjusted so that the IMERG data more closely mapped to those of the TMPA archive. The past 7 days of rainfall are considered, with each day weighted according to their date before present, with the last twenty-four hours having the most impact.</p>
+			<p><strong>Current output</strong>: <a href = "https://pmm.nasa.gov/precip-apps" target = "_blank">https://pmm.nasa.gov/precip-apps</a></p>
+			<figure class = "figure">
+				<img class = "img-fluid" src = "images/LV nowcast example.png" alt = "An example of the landslide nowcast layer in Landslide Viewer">
+				<figcaption class = "figure-caption">An example of the LHASA landslide nowcast in Europe. Red denotes high landslide risk and yellow denotes moderate landslide risk. Image from <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> with added map legend.</figcaption>
+			</figure>
+		</div>
+		<!-- end left column -->
+		
+		<div class="col-sm-4"> <!-- begin right column -->
+			<h4 class = "mt-4">Related Pages</h4>
+			<a href="resources.html" class="list-group-item list-group-item-action">Resources</a>
+			<a href="publications.html" class="list-group-item list-group-item-action">Publications</a>
+			<a href="#" class="list-group-item list-group-item-action active">Landslide Team Projects</a>
+			<a href="related-sites.html" class="list-group-item list-group-item-action">Related Sites</a>
+			
+			<h4 class = "mt-4">Connect with Us</h4>
+			<p>Twitter: <a href = "https://twitter.com/LandslideReport" target = "_blank">@LandslideReport</a>
+				<br>Facebook: <a href = "https://www.facebook.com/LandslideReporter" target = "_blank">LandslideReporter</a>
+				<br>SciStarter: <a href = "https://scistarter.com/project/19540-Landslide-Reporter">Join us on our project page</a>
+				<br>Google Groups: <a href = "https://groups.google.com/forum/#!forum/landslidereporter">Talk on the Landslide Reporter Community message board</a></p>
+			<h4 class="mt-4">Contact Us</h4>
+			<p>For any questions related to this system, please contact 
+			<a href = "mailto:landslide_support@nccs.nasa.gov?subject=[LANDSLIDES] Your subject here">landslide_support@nccs.nasa.gov</a>.
+			</p>
+		</div>
+		<!-- end right column -->
+	</div>
+	<!-- /.row -->
+</div> <!-- /.container -->
+	  
+	<!-- Footer -->
+
+</body>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<a href = "https://pmm.nasa.gov/applications/landslides"><img class = "float-left m-3" src = "https://pmm.nasa.gov/sites/default/files/GPM_Logo_Transparent.png" width = "150px"></a>
+				<p class = "text-muted small mt-3">LANDSLIDES @ NASA
+				<br><a href="https://landslides.nasa.gov">landslides.nasa.gov</a></p>
+			</div>
+			<div class="col-sm-4">		
+				<p class = "text-muted mt-3 small"><a href="https://pmm.nasa.gov">+Precipitation Measurement Missions</a>
+				<br><a href="https://nasa.gov/goddard">+Goddard Space Flight Center</a>
+				<br><a href="https://nasa.gov">+NASA.gov</a>
+				<br><a href="https://usa.gov">+USA.gov</a>
+				</p>
+			</div>
+		</div> <!-- end row -->	
+	</div>
+	<!-- end container -->
+</footer>
+
+</html>
