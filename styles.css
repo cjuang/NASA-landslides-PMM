@@ -9,14 +9,27 @@ body {
 }
 
 #top-title {
-	font-size: 6vmin;
+	font-size: calc(8pt + 6vmin);
 	color: #fff;
-	text-shadow: 1px 1px 6px #000
+	text-shadow: 1px 1px 6px #000;
+}
+
+.page-title {
+	color: #fff;
+	text-shadow: 1px 1px 6px #000;
+	text-align: left;
 }
 
 .top-header {
-  height: 40vh;
-  min-height: 300px;
+  min-height: 6vmax;
+  background: url('images/Landslidebanner_twitter.png') center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.page-header {
   background: url('images/Landslidebanner_twitter.png') center center no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
