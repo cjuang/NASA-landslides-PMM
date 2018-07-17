@@ -8,18 +8,7 @@ body {
   }
 }
 
-#top-title {
-	font-size: calc(8pt + 6vmin);
-	color: #fff;
-	text-shadow: 1px 1px 6px #000;
-}
-
-.page-title {
-	color: #fff;
-	text-shadow: 1px 1px 6px #000;
-	text-align: left;
-}
-
+/* title for homepage */
 .top-header {
   min-height: 6vmax;
   background: url('images/Landslidebanner_twitter.png') center center no-repeat scroll;
@@ -29,6 +18,13 @@ body {
   -o-background-size: cover;
 }
 
+#top-title {
+	font-size: calc(8pt + 6vmin);
+	color: #fff;
+	text-shadow: 1px 1px 6px #000;
+}
+
+/* titles for pages */
 .page-header {
   background: url('images/Landslidebanner_twitter.png') center center no-repeat scroll;
   -webkit-background-size: cover;
@@ -36,12 +32,24 @@ body {
   background-size: cover;
   -o-background-size: cover;
 }
+  
+.page-title {
+	color: #fff;
+	text-shadow: 1px 1px 6px #000;
+	text-align: left;
+}
 
+/* page elements */
 .emphasisGray {
 	background-color: #f5f5f5;
 	padding: 1rem;
 }
 
+.mediaImg {
+	width: calc(100px + 5vw);
+}
+
+/* footer style */
 .footer {
 	background-color: #f5f5f5;
 }
