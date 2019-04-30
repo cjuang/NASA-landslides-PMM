@@ -76,46 +76,78 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8"> <!-- begin left column -->
-			<p class = "mt-4">Learn more about other projects by our landslide team, including how COOLR is being used for model validation. More information about COOLR and citizen science can be found on the <a href = "about.html">About</a> page.</p>
+			<p class = "mt-4">Learn more about other projects by our landslide team, including how COOLR is being used for model validation. More information about the Cooperative Open Online Landslide Repository (COOLR) and citizen science can be found on the <a href = "about.html">About</a> page.</p> These projects are also demonstrated on <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a>.
 			<div class = "emphasisGray">
 				<h4>Contents</h4>
 				<ul>
-					<li><a href = "#GLC">Global Landslide Catalog (GLC)</a></li>
 					<li><a href = "#LHASA">Landslide Hazard Assessment for Situational Awareness (LHASA) Model</a></li>
+					<li><a href = "#susceptibility">Landslide Susceptibility Map</a></li>
+					<li><a href = "#GLC">Global Landslide Catalog (GLC)</a></li>
 				</ul>
 			</div>
 			
-			<a id = "GLC"></a><h3 class = "mt-4">Global Landslide Catalog (GLC)</h3>
-			<p>The NASA Global Landslide Catalog (GLC) is the largest openly available global inventory of rainfall-triggered mass movements known to date.
-			The inventory was created in at NASA Goddard Space Flight Center (GSFC) and currently contains more than 11,000 reports on landslides, debris flows, rock avalanches, etc. around the world. Reports of landslides are found primarily from online media, including news articles as well as other databases. 
-			The GLC has been compiled by scientists, interns and other colleagues at NASA GSFC. The GLC has been cited more than 75 times in peer-reviewed articles. It is now a part of the Cooperative Open Online Landslide Repository (COOLR)'s vast inventory that also contains citizen science data and, in the future, other landslide inventories.
-			The GLC can be separated from the rest of COOLR in file downloads on <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> by looking for Event Source Catalog name "GLC". For referencing the GLC in research, please see the <a href = "coolrdata.html">Downloading the Data</a> page.</p>
-			<p><strong>Media release about the GLC</strong>: <a href = "https://www.nasa.gov/feature/goddard/global-landslide-catalog-aids-view-from-space" target = "_blank">NASA (April 16, 2015)</a></p>
-			<strong>Publications</strong>
-			<ol>
-				<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015), Spatial and temporal analysis of a global landslide catalog. <i>Geomorphology, 249</i>, 4-15. doi:<a href = "https://doi.org/10.1016/j.geomorph.2015.03.016">10.1016/j.geomorph.2015.03.016</a>.
-				<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010), A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards, 52,</i> 561-575. doi:<a href = "https://doi.org/10.1007/s11069-009-9401-4">10.1007/s11069-009-9401-4</a>.
-			</ol>
-			<figure class = "figure">
-				<img class = "img-fluid" src = "images/GLC2017_ReportedFatalities.jpg" alt = "Reported fatalities from rainfall-triggered landslides, recorded in the GLC, 2007-2017">
-				<figcaption class = "figure-caption">The distribution of reported fatalities from 10,804 rainfall-triggered landslides in the GLC, 2007-2017. White dots represent incidents with zero reported fatalities. Dots in the color scale from pink to red represent incidents with fatalities in the range of 1-5000. Image from <a href = "https://svs.gsfc.nasa.gov/4632">NASA's Scientific Visualization Studio</a>.</figcaption>
-			</figure>
-			
-			
+			<!-- begin LHASA description -->
 			<a id = "LHASA"></a><h3 class = "mt-4">Landslide Hazard Assessment for Situational Awareness (LHASA) Model</h3>
-			<p>The global Landslide Hazard Assessment for Situational Awareness (LHASA) <a href = "https://pmm.nasa.gov/resources/glossary#model" target = "_blank">model</a> was developed to provide situational awareness of landslide hazards for a wide range of users. <a href = "https://pmm.nasa.gov/resources/glossary#precipitation" target = "_blank">Precipitation</a> is a common trigger of landslides. The <a href = "https://pmm.nasa.gov/GPM" target = "_blank">GPM</a> Integrated Multi-satellitE Retrievals for GPM (<a href = "https://pmm.nasa.gov/resources/acronyms#IMERG" target = "_blank">IMERG</a>) data shows recent precipitation, updated every thirty minutes. 
+			
+			<p>The global Landslide Hazard Assessment for Situational Awareness (LHASA) model was developed to provide situational awareness of landslide hazards for a wide range of users. Precipitation is a common trigger of landslides. The Global Precipitation Measurement Mission (<a href = "https://pmm.nasa.gov/GPM" target = "_blank">GPM</a>) Integrated Multi-satellitE Retrievals for GPM (<a href = "https://pmm.nasa.gov/resources/acronyms#IMERG" target = "_blank">IMERG</a>) data shows recent precipitation, updated every thirty minutes. 
 			A LHASA landslide “nowcast” is created by comparing GPM data from the last seven days to the long-term precipitation record provided by the Tropical Rainfall Measuring Mission (<a href = "https://pmm.nasa.gov/resources/acronyms#TRMM" target = "_blank">TRMM</a>) Multi-satellite Precipitation Analysis (<a href = "https://pmm.nasa.gov/resources/acronyms#TMPA" target = "_blank">TMPA</a>). 
 			Because IMERG data was only available starting in 2014, the record of historical rainfall was established by TMPA, comparing 2001-present. The TMPA rainfall probability distributions were then compared to that of IMERG and the rainfall thresholds were adjusted so that the IMERG data more closely mapped to those of the TMPA archive. The past 7 days of rainfall are considered, with each day weighted according to their date before present, with the last twenty-four hours having the most impact.</p>
+			
 			<p><strong>More information</strong>: <a href = "https://pmm.nasa.gov/applications/global-landslide-model">https://pmm.nasa.gov/applications/global-landslide-model</a></p>
+			<p><strong>Download the model</strong>: <a href = "https://github.com/nasa/lhasa">https://github.com/nasa/lhasa</a>
 			<p><strong>Current output</strong>: <a href = "https://pmm.nasa.gov/precip-apps" target = "_blank">https://pmm.nasa.gov/precip-apps</a></p>
-			<strong>Publications</strong>
+
+			<strong>Publications and Media</strong>
 			<ol>
-				<li>Kirschbaum, D. and Stanley, T. (2018). Satellite-Based Assessment of Rainfall-Triggered Landslide Hazard for Situational Awareness. <i>Earth's Future</i>. doi:<a href = "https://doi.org/10.1002/2017EF000715">10.1002/2017EF000715</a>.
+				<li>Kirschbaum, D. and Stanley, T. (2018). Satellite-Based Assessment of Rainfall-Triggered Landslide Hazard for Situational Awareness. <i>Earth's Future</i>. doi:<a href = "https://doi.org/10.1002/2017EF000715">10.1002/2017EF000715</a>.</li>
+				<li><a href = "https://www.nasa.gov/feature/goddard/2018/new-from-nasa-tracking-landslide-hazards-new-nasa-model-finds-landslide-threats-in-near-real">"New NASA Model Finds Landslide Threats in Near Real-Time During Heavy Rains"</a>, <i>NASA</i>, Greenbelt, MD (March 22, 2018)</li>
 			</ol>
+
 			<figure class = "figure">
 				<img class = "img-fluid" src = "images/LV nowcast example.png" alt = "An example of the landslide nowcast layer in Landslide Viewer">
 				<figcaption class = "figure-caption">An example of the LHASA landslide nowcast in Europe. Red denotes high landslide risk and yellow denotes moderate landslide risk. Image from <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> with added map legend.</figcaption>
+			</figure><!-- end of LHASA description -->
+
+			
+			<!-- begin Susceptibility Map description -->
+			<a id = "susceptibility"></a><h3 class = "mt-4">Landslide Susceptibility Map</h3>
+
+			<p>The landslide susceptibility map was developed to assess the underlying landslide susceptibility of terrain. This includes quantitative information on if <a href = "https://www.openstreetmap.org/about">roads</a> have been built, <a href = "http://earthenginepartners.appspot.com/science-2013-global-forest">trees</a> have been cut down or burned, a major tectonic fault is nearby, the local <a href = "http://ccgm.org/en/">bedrock</a> is weak, and/or the hillsides are <a href = "http://viewfinderpanoramas.org/">steep</a>. This map was combined with Global Precipitation Measurement (<a href = "https://pmm.nasa.gov/GPM" target = "_blank">GPM</a>) data to develop the <a href = "#LHASA">LHASA</a> model.
+			</p>
+			<p><strong>More information and raster map download</strong>: <a href = "https://pmm.nasa.gov/applications/global-landslide-model">https://pmm.nasa.gov/applications/global-landslide-model</a></p>
+
+			<strong>Publications and Media</strong>
+			<ol>
+				<li>Stanley, T., & Kirschbaum, D. B. (2017). A heuristic approach to global landslide susceptibility mapping. <i>Natural Hazards</i>, 87(1), 145-164. doi:<a href = "https://doi.org/10.1007/s11069-017-2757-y">10.1007/s11069-017-2757-y</a></li>
+				<li>Kirschbaum, D., Stanley, T., & Yatheendradas, S. (2016). Modeling landslide susceptibility over large regions with fuzzy overlay. <i>Landslides</i>, 13(3), 485-496. doi:<a href = "https://doi.org/10.1007/s10346-015-0577-2">10.1007/s10346-015-0577-2</a></li>
+				<li><a href = "https://earthobservatory.nasa.gov/images/89937/a-global-view-of-landslide-susceptibility">"A Global View of Landslide Susceptibility"</a>, <i>NASA Earth Observatory</i>, Greenbelt, MD (March 30, 2017)</li>
+			</ol>
+			<figure class = "figure">
+				<img class = "img-fluid" src = "images/LV susceptibility example.png" alt = "Screenshot of Landslide Viewer with the susceptibility map and landslide points by fatalities visible">
+				<figcaption class = "figure-caption">COOLR landslide points (in orange) and NASA landslide susceptibility (blue = low susceptibility, red = high susceptibility), in Central America. Notice that there are a lot of areas with high susceptibility but no landslide reports, signifying we need more data on past landslides to make sure our susceptibility maps are accurate. Image from <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> with added map legend.</figcaption>
+			</figure><!-- end of Susceptibility Map description -->
+
+			<!-- Begin Global Landslide Catalog description -->
+			<a id = "GLC"></a><h3 class = "mt-4">Global Landslide Catalog (GLC)</h3>
+			
+			<p>The NASA Global Landslide Catalog (GLC) is the largest openly available global inventory of rainfall-triggered mass movements known to date.
+			The inventory was created in at NASA Goddard Space Flight Center (GSFC) and currently contains more than 11,500 reports on landslides, debris flows, rock avalanches, etc. around the world. Reports of landslides are found primarily from online media, including news articles as well as other databases. 
+			The GLC has been compiled by scientists, interns and other colleagues at NASA GSFC. The GLC has been cited more than 75 times in peer-reviewed articles.</p>
+			<p>The GLC is a part of the Cooperative Open Online Landslide Repository (<a href = "https://pmm.nasa.gov/landslides/about.html">COOLR</a>), and can be downloaded on <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a>. When COOLR is downloaded, GLC data can be found by the label "GLC" in the database field "event_import_source". For referencing the GLC in research, please see the <a href = "coolrdata.html">Downloading the Data</a> page.</p>
+			<p><strong>Download COOLR data</strong>: <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a></p>
+			<strong>Publications and Media</strong>
+			<ol>
+				<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015), Spatial and temporal analysis of a global landslide catalog. <i>Geomorphology, 249</i>, 4-15. doi:<a href = "https://doi.org/10.1016/j.geomorph.2015.03.016">10.1016/j.geomorph.2015.03.016</a>.
+				<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010), A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards, 52,</i> 561-575. doi:<a href = "https://doi.org/10.1007/s11069-009-9401-4">10.1007/s11069-009-9401-4</a>.
+				<li><a href = "https://www.nasa.gov/feature/goddard/global-landslide-catalog-aids-view-from-space" target = "_blank">"Global Landslide Catalog Aids View From Space"</a>, <i>NASA</i>, Greenbelt, MD (April 16, 2015)</li>
+			</ol>
+
+			<figure class = "figure">
+				<img class = "img-fluid" src = "images/GLC2019_Points.jpg" alt = "Landslide events recorded in the GLC, 2007-2019">
+				<figcaption class = "figure-caption">The distribution of 11,033 reported rainfall-triggered landslides in the GLC, 2007-2019 (last update 02.29.19). Each white dot represents one landslide event at that location. Image from <a href = "https://svs.gsfc.nasa.gov/4710">NASA's Scientific Visualization Studio</a>.</figcaption>
 			</figure>
+			<!-- end Global Landslide Catalog description -->
+			
 			
 		</div>
 		<!-- end left column -->
