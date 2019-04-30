@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- run analytics -->
-	<script language="javascript" id="_fed_an_ua_tag" src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
+	<!--<script language="javascript" id="_fed_an_ua_tag" src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
 	<!-- import Bootstrap CSS -->
 	<link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.min.css">
 	<!-- import external CSS -->
@@ -65,58 +65,69 @@
 	<div class="row">
 		<div class="col-sm-8">
 
-			<h3 class = "mt-4">Why COOLR?</h3>
+			<!-- why COOLR? -->
+			<h3 class = "mt-4">Why are we looking at landslides?</h3>
 			<p class = "LRbold">Landslides cause billions of dollars in infrastructural damage and thousands of deaths every year around the world.</p>
-			<p>However, to date we do not have a global picture of exactly where and when landslides occur owing to their small size and difficulty in identifying 
-			their onset and extent when no one is around to witness their impacts. The COOLR project provides an open platform where 
-			scientists and citizen scientists around the world can share landslide reports to guide awareness of landslide hazards for improving
-			scientific modeling and emergency response.
+			<p>However, to date we do not have a global picture of exactly where and when landslides occur owing to their small size and difficulty in identifying their onset and extent when no one is around to witness their impacts. The Cooperative Open Online Landslide Repository (COOLR) project provides an open platform where scientists and citizen scientists around the world can share landslide reports to guide awareness of landslide hazards for improving scientific modeling and emergency response. Scientists and citizen scientists can submit landslides to the <a href ="https://landslides.nasa.gov/reporter">Landslide Reporter</a> web application, or submit landslide inventories directly to us. All the data submitted is made available on the data portal Landslide Viewer, which shows referenced and imported landslide inventories from all over the world.
 			</p>
+
+			<!-- fatal landslides from the GLC -->
 			<figure class = "figure">
-				<img src = "images/LR-9-rect.gif" class = "img-fluid" alt = "Become a citizen scientist today">
-				<figcaption class="figure-caption">Two satellite images of a 5.5 million cubic meters landslide in the Sunkosi (Sunkoshi) River Valley, northern Nepal, that killed 156 people. The first picture was taken September 2013, and the
-				second was taken September 2014, about a month after the landslide happened on August 2, 2014. Images by Jesse Allen using Landsat data from the US Geological Survey. Read more at <a href = "https://earthobservatory.nasa.gov/NaturalHazards/view.php?id=84406" target="_blank">NASA Earth Observatory</a>.</figcaption>
-			</figure>	
+				<img class = "img-fluid" src = "images/GLC2017_ReportedFatalities.jpg" alt = "Reported fatalities from rainfall-triggered landslides, recorded in the GLC, 2007-2017">
+				<figcaption class = "figure-caption">The distribution of reported fatalities from 10,804 rainfall-triggered landslides in the NASA Global Landslide Catalog (<a href = "projects.html#GLC">GLC</a>), 2007-2017. White dots represent incidents with zero reported fatalities. Dots in the color scale from pink to red represent incidents with fatalities in the range of 1-5000. Image from <a href = "https://svs.gsfc.nasa.gov/4632">NASA's Scientific Visualization Studio</a>.</figcaption>
+			</figure>
+			
+			<!-- what is COOLR? -->
 			<h3 class = "mt-4">What is COOLR?</h3>
-			<p>The Cooperative Open Online Landslide Repository (COOLR) is a worldwide inventory of landslide events. It currently includes NASA’s <a href = "projects.html#GLC">Global 
-			Landslide Catalog (GLC)</a> and landslide events contributed by citizen scientists. In a future release of COOLR, collated landslide inventories will be added by REST API or manually.
+			<p>The Cooperative Open Online Landslide Repository (COOLR) is a worldwide inventory of landslide events. COOLR currently includes:
+			<ul>
+				<li><strong>NASA’s <a href = "projects.html#GLC">Global Landslide Catalog (GLC)</a></strong>, </li>
+				<li><strong>Landslide Reporter Catalog (LRC)</strong>: Landslide events contributed by citizen scientists (like you!) through Landslide Reporter (see the <a href = "report.html">Report a Landslide</a> page), and </li>
+				<li><strong>Collated landslide inventories</strong> from other institutions added by REST API or imported directly into COOLR.</li>
 			</p>
 			
+			<!-- COOLR diagram showing the different parts of the repository -->
 			<figure class = "figure">
-				<img src = "images/COOLR stage1 diagram.png" class = "img-fluid" alt = "structure of COOLR">
-				<figcaption class="figure-caption">The structure of the Cooperative Open Online Landslide Repository (COOLR). The dotted outline represents future additions.</figcaption>
+				<img src = "images/COOLR stage2 diagram.png?1" class = "img-fluid" alt = "structure of COOLR">
+				<figcaption class="figure-caption">The structure showing the data within the Cooperative Open Online Landslide Repository (COOLR).</figcaption>
 			</figure>
-				
+			
+			<!-- why citizen science? -->
 			<h3 class = "mt-4">Why are citizen scientists needed?</h3>
-			<p>NASA's <a href = "projects.html#GLC">Global Landslide Catalog (GLC)</a>—a part of COOLR—provides new insight into landslide hazards around the world, but it has been a manual and very 
-			time consuming process that is hard to maintain. In fact, if we sum up all the hours it has taken over the past 10 years to compile this 
+			<p>Our team at NASA has been collecting landslides around the world since 2007 in the <a href = "projects.html#GLC">Global Landslide Catalog (GLC)</a>. The GLC provides new insight into landslide hazards around the world, but it has been a manual and very time consuming process that is hard to maintain. In fact, if we sum up all the hours it has taken over the past 10 years to compile this 
 			inventory it would total over 140 days, 84 work weeks, or 1.6 years of straight landslide cataloging! The inventory is also challenged by biases affecting where and when landslide 
-			information is available (for more details please see the <a href = "publications.html">Publications</a>). We are appealing to the global citizen 
-			science community to help advance our knowledge of where and when landslides are happening around the world by adding reports to the 
-			Cooperative Open Online Landslide Repository (COOLR). <strong>Citizen scientists are people like you who can use their knowledge to advance 
+			information is available (for more details please see the <a href = "publications.html">Publications</a>). </p>
+			<p>We are appealing to the global citizen science community to help advance our knowledge of where and when landslides are happening around the world by adding reports to fill in the gaps in our data, creating the Cooperative Open Online Landslide Repository (COOLR). <strong>Citizen scientists are people like you who can use their knowledge to advance 
 			scientific research and grow our collective understanding of this pervasive hazard.</strong></p>
-			<strong>Citizen science enables:</strong>
+			<strong>Citizen science can help:</strong>
 			<ol>
-				<li>Amassing information from many different sources, and with as little bias as possible, 
+				<li><strong>Find information from many different sources</strong>, and with as little bias as possible, 
 				including local first-hand accounts, reports in other languages, and points from other 
-				inventories
-				<li>More hands to contribute reports, leading to a more up-to-date and thorough
-				inventory
-				<li>More awareness and education about landslides as a natural process and natural/man-made 
+				inventories for a robust landslide repository
+				<li><strong>Collect recent landslides</strong> and keep the repository up-to-date
+				<li><strong>Create more awareness and education</strong> about landslides as a natural process and natural/man-made 
 				hazard
 			</ol>
 			<p>With the help of citizen scientists like you, we can improve both the quantity and quality of open landslide data to provide a clearer picture of how landslides are shaping our world.</p>
-			
+
+			<!-- GIF of landslide with caption -->
 			<figure class = "figure">
-				<img class = "img-fluid" src = "images/LV susceptibility example.png" alt = "Screenshot of Landslide Viewer with the susceptibility map and landslide points by fatalities visible">
-				<figcaption class = "figure-caption">COOLR landslide points (in orange) and NASA landslide susceptibility (blue = low susceptibility, red = high susceptibility), in Central America. Notice that there are a lot of areas with high susceptibility but no landslide reports, 
-				signifying we need more data on past landslides to make sure our susceptibility maps are accurate. Image from <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a> with added map legend.</figcaption>
+				<img src = "images/LR-9-rect.gif" class = "img-fluid" alt = "Become a citizen scientist today">
+				<figcaption class="figure-caption">Two satellite images of a 5.5 million cubic meters landslide in the Sunkosi (Sunkoshi) River Valley, northern Nepal, that killed 156 people. The first picture was taken September 2013, and the second was taken September 2014, about a month after the landslide happened on August 2, 2014. Images by Jesse Allen using Landsat data from the US Geological Survey. Read more at <a href = "https://earthobservatory.nasa.gov/NaturalHazards/view.php?id=84406" target="_blank">NASA Earth Observatory</a>.</figcaption>
 			</figure>
 			
+			<!-- what happens to the data? -->
+			<h3 class = "mt-4">What happens to the data?</h3>
+			<strong>Landslides collected in COOLR help NASA scientists with their research.</strong> COOLR is used to validate the Landslide Hazard Assessment for Situational Awareness (<a href = "projects.html#LHASA">LHASA</a>) model being developed at NASA Goddard Space Flight Center (<a href = "https://www.nasa.gov/goddard/">GSFC</a>). COOLR data is compared to the LHASA model "nowcasts" to verify the accuracy of the model. Since most landslides occur in places with no observations, it is not possible to verify its accuracy in all areas. We need a more robust landslide inventory to improve this model, which is where citizen science can help. For links to the LHASA publication and more information about the model, see the <a href = "resources.html">Resources</a> page. 
+			
+			<p>The global data is also <strong>openly available</strong> online for other scientific groups to view and download, on the data portal <a href = "https://landslides.nasa.gov/viewer">Landslide Viewer</a>. If you use COOLR in your research publication, we request that you reference the data following the citation instructions on the <a href = "coolrdata.html">COOLR Data page.</a></p>
+
+			<!-- next steps -->
 			<h3 class = "mt-4">Next Steps: Get Started with COOLR</h3>
 				<p>Visit <a href = "report.html">Report Landslides</a> to find out how you can access the data, learn more about landslides, and contribute to advancing landslide science and emergency response by adding your own reports.</p>
 				<a class="btn btn-danger btn-lg mb-4" href="report.html" target = "_blank">Report Landslides &raquo;</a>
 
+			<!-- begin collapsible boxes with FAQ -->
 			<h3 class = "mt-4">Frequently Asked Questions</h3>
 			<h5>General</h5>
 			<a data-toggle="collapse" href="#collapseThis1" role="button" aria-expanded="false" aria-controls="collapseThis1">
