@@ -10,5 +10,4 @@ The website was developed from scratch in HTML and CSS, using Twitter Bootstrap 
 The website can be accessed at https://landslides.nasa.gov or https://pmm.nasa.gov/landslides/index.html.
 
 # developer
-Caroline Juang, Science Systems and Applications, Inc./NASA GSFC.
-For questions, email caroline.juang@nasa.gov
+Caroline Juang, Science Systems and Applications, Inc./NASA GSFC. (2018-2019)
